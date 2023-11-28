@@ -3,22 +3,35 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+# -- Path setup --------------------------------------------------------------
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+#
+import os
+import sys
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+# sys.path.insert(0, os.path.abspath('.'))
+sys.path.append(os.path.abspath("sphinxext"))
+
+
 # -- Project information -----------------------------------------------------
 # General information about the project.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project_namecode = "entrenamiento.python_intermedio"
 project_short_name = "programación en Python 3 - Nivel intermedio"
-project = project_short_name[0].capitalize() + project_short_name[1:39]
+project = project_short_name[0].capitalize() + project_short_name[1:43]
 project_name = project_namecode.replace(".", "")
 project_details = f"Entrenamiento de {project_short_name}"
 publisher = "Leonardo J. Caballero G."
 years = "2022 - 2023"
 copyright = f"{years}, {publisher}"
 author = "Leonardo J. Caballero G."
-#project = 'Programación en Python - Nivel intermedio'
-#copyright = '2023, Leonardo J. Caballero G.'
-#author = 'Leonardo J. Caballero G.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -33,6 +46,10 @@ release = '3.11.2'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+# If your documentation needs a minimal Sphinx version, state it here.
+#
+needs_sphinx = "5.1.1"
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
@@ -40,9 +57,16 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     "sphinx.ext.viewcode",
+    # "IPython.sphinxext.ipython_console_highlighting",
+    # "IPython.sphinxext.ipython_directive",
     "sphinx_contributors",
-    # "sphinx_immaterial",
+    "sphinx_immaterial",
+    "sphinx_immaterial.kbd_keys",
+    "sphinx_tabs.tabs",
     "sphinxcontrib.email",
+    "sphinxcontrib.quizdown",
+    "yasfb",
+    "sphinx_disqus.disqus",
 ]
 
 # Options for the linkcheck builder
@@ -104,6 +128,13 @@ show_authors = True
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "sphinx"
 
+# A string of reStructuredText that will be included at the end of every
+# source file that is read.
+rst_epilog = """
+.. _`CodigoFacilito.com`: https://codigofacilito.com/
+.. |psf| replace:: Python Software Foundation
+"""
+
 # If true, figures, tables and code-blocks are automatically numbered if
 # they have a caption.
 numfig = True
@@ -123,40 +154,32 @@ numfig_format = {
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-# html_theme = 'sphinx_immaterial'
-html_theme = 'alabaster'
+html_theme = 'sphinx_immaterial'
+# html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# material theme options (see theme.conf for more information)
 html_theme_options = {
     "edit_uri": "edit/3/source",
     "site_url": "https://entrenamiento-python-intermedio.readthedocs.io/es/3/",
     "repo_url": "https://github.com/macagua/entrenamiento.python_intermedio",
     "repo_name": "entrenamiento.python_intermedio",
     "repo_type": "github",
-    "globaltoc_collapse": True,
     "icon": {
         "repo": "fontawesome/brands/github",
         "edit": "material/file-edit-outline",
     },
     "features": [
         "navigation.expand",
-        "navigation.tabs",
         "toc.integrate",
-        "navigation.sections",
-        # "navigation.instant",
-        # "header.autohide",
         "navigation.top",
         "navigation.tracking",
         "search.highlight",
         "search.share",
         "toc.follow",
         "toc.sticky",
-        "content.tabs.link",
-        "announce.dismiss",
     ],
     "palette": [
         {
@@ -166,7 +189,7 @@ html_theme_options = {
             # "primary": "light-green",
             # "accent": "light-blue",
             "toggle": {
-                "icon": "material/lightbulb-outline",
+                "icon": "material/weather-sunny",
                 "name": "Cambiar al modo oscuro",
             },
         },
@@ -175,9 +198,9 @@ html_theme_options = {
             "media": "(prefers-color-scheme: dark)",
             "scheme": "slate",
             # "primary": "deep-orange",
-            # "accent": "lime",
+            # "accent": "light",
             "toggle": {
-                "icon": "material/lightbulb",
+                "icon": "material/weather-night",
                 "name": "Cambiar al modo claro",
             },
         },
@@ -186,7 +209,7 @@ html_theme_options = {
     "version_dropdown": True,
     "version_info": [
         {
-            "version": "https://entrenamiento-python-basico.readthedocs.io/es/3/",
+            "version": "https://entrenamiento-python-intermedio.readthedocs.io/es/latest/",
             "title": "3.x",
             "aliases": [],
         },
@@ -197,32 +220,17 @@ html_theme_options = {
         # },
     ],
     # END: version_dropdown
-    "toc_title_is_page_title": True,
-    # BEGIN: social icons
-    "social": [
-        {
-            "icon": "fontawesome/brands/github",
-            "link": "https://github.com/macagua/entrenamiento.python_intermedio",
-            "name": "Source on github.com",
-        },
-        {
-            "icon": "fontawesome/brands/python",
-            "link": "https://entrenamiento-python-intermedio.rtfd.io/es/3/",
-        },
-    ],
-    # END: social icons
 }
 
-
 # Add any paths that contain custom themes here, relative to this directory.
-html_static_path = ['_static']
+# html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 html_title = project_details
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = project_short_name[0].capitalize() + project_short_name[1:39]
+html_short_title = project_short_name[0].capitalize() + project_short_name[1:43]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -317,6 +325,160 @@ html_show_sphinx = False
 # base URL from which the finished HTML is served.
 html_use_opensearch = "entrenamiento-python-intermedio.readthedocs.io"
 
+
+# -- Options for HTMLHelp output ---------------------------------------------
+
+# Output file base name for HTML help builder.
+htmlhelp_basename = f"{project_name}doc"
+
+
+# -- Options for LaTeX output ------------------------------------------------
+
+latex_elements = {
+    # The paper size ('letterpaper' or 'a4paper').
+    #
+    "papersize": "a4paper",
+    # The font size ('10pt', '11pt' or '12pt').
+    #
+    # 'pointsize': '10pt',
+    # "inputenc" package inclusion, default '\\usepackage[utf8]{inputenc}'.
+    "inputenc": r"""
+    \usepackage[utf8]{inputenc}
+    """,
+    # "fontenc" package inclusion, default '\\usepackage[T1]{fontenc}'.
+    # 'fontenc': r'''
+    # \usepackage[T1]{fontenc}
+    # ''',
+    # Additional stuff for the LaTeX preamble.
+    #
+    "preamble": r"""
+    \usepackage{pmboxdraw}
+    \authoraddress{
+      \strong{Contactos:} \email{leonardocaballero@gmail.com} -
+      \url{https://github.com/macagua}\\
+      \strong{Ciudad de Mérida, Estado Mérida, Venezuela. 5101.}\\
+      \strong{Telf.} +58-412-473.53.76 (WhatsApp / Telegram)
+    }
+    \let\Verbatim=\OriginalVerbatim
+    \let\endVerbatim=\endOriginalVerbatim
+    """,
+    # Latex figure (float) alignment
+    #
+    # 'figure_align': 'htbp',
+    # Additional footer content (before the indices), default empty.
+    # 'footer': 'Ing. Leonardo J. Caballero G.'
+}
+
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+latex_documents = [
+    (root_doc, project_name + ".tex", project_details, author, "manual"),
+]
+
+# The name of an image file (relative to this directory) to place at the top of
+# the title page.
+latex_logo = "_static/python_logo_print.png"
+
+# For "manual" documents, if this is true, then toplevel headings are parts,
+# not chapters.
+# latex_use_parts = False
+
+# If true, show page references after internal links.
+latex_show_pagerefs = True
+
+# If true, show URL addresses after external links.
+latex_show_urls = "footnote"
+
+# Documents to append as an appendix to all manuals.
+latex_appendices = [
+    "acerca_de",
+    "esquema",
+    "copyright",
+    "licencia",
+]
+
+# If false, no module index is generated.
+# latex_domain_indices = True
+
+
+# -- Options for Texinfo output ----------------------------------------------
+
+# Grouping the document tree into Texinfo files. List of tuples
+# (source start file, target name, title, author,
+#  dir menu entry, description, category)
+texinfo_documents = [
+    (
+        root_doc,
+        project_name,
+        project_details,
+        author,
+        project_name,
+        project_details,
+        "Misceláneos",
+    ),
+]
+
+# Documents to append as an appendix to all manuals.
+# texinfo_appendices = ['apendices/operadores', 'glosario','licencia']
+
+# If false, no module index is generated.
+# texinfo_domain_indices = True
+
+# How to display URL addresses: 'footnote', 'no', or 'inline'.
+# texinfo_show_urls = 'footnote'
+
+
+# -- Options for Epub output -------------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = project_details
+epub_author = author
+epub_publisher = publisher
+epub_copyright = f"{years}, {author}"
+
+# The language of the text. It defaults to the language option
+# or 'en' if the language is not set.
+epub_language = language
+
+# The scheme of the identifier. Typical schemes are ISBN or URL.
+# epub_scheme = ''
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#
+# epub_identifier = ''
+
+# A unique identification for the text.
+#
+# epub_uid = ''
+
+# A tuple containing the cover image and cover page html template filenames.
+#
+# epub_cover = ()
+
+# HTML files that should be inserted before the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#
+# epub_pre_files = []
+
+# HTML files shat should be inserted after the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+#
+# epub_post_files = []
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ["search.html"]
+
+# The depth of the table of contents in toc.ncx.
+#
+# epub_tocdepth = 3
+
+# Allow duplicate toc entries.
+#
+# epub_tocdup = True
+
+
 # -- Extension configuration -------------------------------------------------
 
 # -- Options for intersphinx extension ---------------------------------------
@@ -337,10 +499,53 @@ todo_include_todos = True
 # If true, ....
 todo_emit_warnings = False
 
+# -- Options for sphinx-tabs extension -------------------------------
+
+# If needed, allow additional builders to be considered compatible.
+sphinx_tabs_valid_builders = ["linkcheck"]
+
+# Disable the tabs can be closed by selecting the open tab, by default
+sphinx_tabs_disabled_tab_closing = True
+
 # -- Options for sphinxcontrib-email extension -------------------------------
 
 # Set True to automatically obfuscate all mailto links.
 email_automode = True
+
+# -- Options for quizdown extension ------------------------------------------
+
+# Global options passed to the quizdown library
+quizdown_config = {
+    # quizdown javascript
+    "quizdown_js": "https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js",
+    # detect and convert all divs with class quizdown
+    "start_on_load": True,
+    # shuffle answers for each question
+    "shuffle_answers": True,
+    # shuffle questions for each quiz
+    "shuffle_questions": True,
+    # primary CSS color
+    "primary_color": "#FF851B",
+    # secondary CSS color
+    "secondary_color": "#DDDDDD",
+    # text color of interactive elements
+    "text_color": "black",
+    # language of text in user interface
+    "locale": "es",
+}
+
+# -- Options for yasfb extension ---------------------------------------------
+
+# Set the Feed Base Url.
+feed_base_url = "https://entrenamiento-python-basico.readthedocs.io/es/3.7/"
+
+# Set the Feed Author Name.
+feed_author = "Leonardo Caballero"
+
+# -- Options for disqus extension --------------------------------------------
+
+# Set disqus site short name.
+disqus_shortname = "entrenamiento-python-basico"
 
 # -- Options for main setup --------------------------------------------------
 
