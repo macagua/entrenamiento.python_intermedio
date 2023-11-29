@@ -1,10 +1,10 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_leccion4:
+.. _python_fun_orden_superior:
 
 Funciones de orden superior
-===========================
+---------------------------
 
 Las funciones de Python pueden tomar funciones como parámetros y devolver funciones
 como resultado. Una función que hace ambas cosas o alguna de ellas se llama función
@@ -243,9 +243,9 @@ de rendimiento. No es el caso en Python.
 .. code-block:: pycon
 
     >>> import os
-    >>> archivos = os.listdir(os.__file__.replace("{}os.py".format(os.sep), os.sep))
-    >>> print(list(filter(lambda x: x.startswith("os."), archivos)))
-    ['os.py']
+    >>> archivos = os.listdir(os.__file__.replace("/os.pyc", "/"))
+    >>> print(filter(lambda x: x.startswith("os."), archivos))
+    ['os.pyc', 'os.py']
 
 En el ejemplo anterior se usa el método ``os.__file__`` para obtener la ruta donde
 esta instalada el módulo ``os`` en su sistema, ejecutando la siguiente sentencia:
@@ -256,13 +256,12 @@ esta instalada el módulo ``os`` en su sistema, ejecutando la siguiente sentenci
     '/usr/lib/python3.11/os.pyc'
 
 Si con el método ``os.__file__`` obtiene la ruta del módulo ``os`` con el método
-``replace("{}os.py".format(os.sep), os.sep)`` busca la cadena de carácter ``/os.py`` para Linux
-y para Windows ``\\os.py`` y la remplaza por la cadena de carácter ``/`` para Linux
-y para Windows ``\\``
+``replace("/os.pyc", "/")`` busca la cadena de carácter "/os.pyc" y la remplaza por
+la cadena de carácter "/"
 
 .. code-block:: pycon
 
-    >>> os.__file__.replace("{}os.py".format(os.sep), os.sep)
+    >>> os.__file__.replace("/os.pyc", "/")
     '/usr/lib/python3.11/'
 
 Luego se define la variable ``archivos`` generando una lista de archivos usando la
@@ -283,15 +282,15 @@ con un tamaño de *433*, como se puede comprobar a continuación:
     >>> len(archivos)
     443
 
-Opcionalmente puede comprobar si la cadena de caracteres **os.py** se encuentras
+Opcionalmente puede comprobar si la cadena de caracteres **os.pyc** se encuentras
 una de las posiciones de la lista ``archivos``, ejecutando la siguiente sentencia:
 
 .. code-block:: pycon
 
-    >>> "os.py" in archivos
+    >>> "os.pyc" in archivos
     True
 
-Ya al comprobar que existe la cadena de caracteres "**os.py**" se usa una función
+Ya al comprobar que existe la cadena de caracteres "**os.pyc**" se usa una función
 ``lambda`` como parámetro de la función :ref:`filter() <python_fun_filter>` para
 filtrar todos los archivos del directorio "*/usr/lib/python3.11/*" por medio del función
 ``os.listdir()`` que inicien con la cadena de caracteres "**os.**" usando la función
@@ -300,9 +299,9 @@ filtrar todos los archivos del directorio "*/usr/lib/python3.11/*" por medio del
 .. code-block:: pycon
 
     >>> print(filter(lambda x: x.startswith("os."), os.listdir("/usr/lib/python3.11/")))
-    ['os.py']
+    ['os.pyc', 'os.py']
 
-Así de esta forma se comprueba que existe el archivo compilado "**os.py**" de Python
+Así de esta forma se comprueba que existe el archivo compilado "**os.pyc**" de Python
 junto con el mismo módulo Python "**os.py**".
 
 
@@ -314,7 +313,7 @@ junto con el mismo módulo Python "**os.py**".
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 

@@ -1,10 +1,10 @@
 .. -*- coding: utf-8 -*-
 
 
-.. _python_leccion2:
+.. _python_fun_avanzadas:
 
-Uso avanzado de funciones
-=========================
+Funciones avanzadas
+-------------------
 
 En Python hay varias funciones avanzadas que se describen a continuación:
 
@@ -12,7 +12,7 @@ En Python hay varias funciones avanzadas que se describen a continuación:
 .. _python_fun_predicado:
 
 Funciones de predicado
-----------------------
+......................
 
 Las funciones de predicado no es más que una función la cual dice si algo es ``True``
 o ``False``, es decir, es una función que devuelve un tipo de datos
@@ -27,7 +27,7 @@ o ``False``, es decir, es una función que devuelve un tipo de datos
 .. comments:
 
     Objetos de función
-    ------------------
+    ..................
 
     .. todo::
         TODO escribir la sección Objetos de función.
@@ -36,7 +36,7 @@ o ``False``, es decir, es una función que devuelve un tipo de datos
 .. _python_fun_anonimas:
 
 Funciones anónimas
-------------------
+..................
 
 Una función anónima, como su nombre indica es una función sin nombre. Es decir, es
 posible ejecutar una función sin referenciar un nombre, en Python puede ejecutar
@@ -59,7 +59,7 @@ sobre algo. Por tanto se podría decir que, mientras las funciones anónimas
 .. _python_expresion_lambda:
 
 Expresión lambda
-----------------
+................
 
 Si deconstruye una función sencilla, puede llegar a una función ``lambda``. Por ejemplo
 la siguiente función es para doblar un valor de un número:
@@ -106,6 +106,7 @@ siguiente forma:
     <type 'function'>
     >>> lambda numero: numero * 2
     <function <lambda> at 0x7f1023944e60>
+    
 
 
 Esta notación simple es la que una función ``lambda`` intenta replicar, observe,
@@ -142,9 +143,10 @@ funciones como :ref:`filter() <python_fun_filter>` y :ref:`map() <python_fun_map
 .. _python_fun_avanzadas_ejs:
 
 Ejemplos de funciones avanzadas
--------------------------------
+...............................
 
 A continuación, se presentan algunos ejemplos de su uso:
+
 
 **Función lambda - operaciones aritméticas**
 
@@ -185,7 +187,7 @@ sumar dos :ref:`números <python_int>`:
 
 .. seealso::
 
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
@@ -193,8 +195,3 @@ sumar dos :ref:`números <python_int>`:
    :file: ../_templates/partials/soporte_profesional.html
 
 .. disqus::
-
-
-
-.. raw:: html
-   :file: ../_templates/partials/soporte_profesional.html

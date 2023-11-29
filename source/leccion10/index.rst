@@ -6,8 +6,13 @@
 Uso prácticos de la librería estándar
 =====================================
 
-.. todo::
-    TODO escribir esta seccion.
+
+
+.. toctree::
+   :maxdepth: 2
+
+   libreria_estandar
+   json
 
 
 .. raw:: html
