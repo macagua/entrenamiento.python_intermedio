@@ -78,4 +78,4 @@ De esta forma se escribí y lee un archivo JSON.
 
 .. disqus::
 
-.. _`json`: https://docs.python.org/es/3.7/library/json.html
+.. _`json`: https://docs.python.org/es/3.11/library/json.html

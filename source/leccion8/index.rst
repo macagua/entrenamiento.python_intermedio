@@ -508,8 +508,8 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
     frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
 Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben
-ser objetos inmutables: :ref:`números <python_int>`, :ref:`cadena de caracteres <python_str>`, :ref:`tuplas <python_tuple>` y sets inmutables,
-pero no :ref:`listas <python_list>` ni sets mutables.
+ser objetos inmutables: :ref:`números <python_int>`, :ref:`cadena de caracteres <python_str>`,
+:ref:`tuplas <python_tuple>` y sets inmutables, pero no :ref:`listas <python_list>` ni sets mutables.
 
 
 Ayuda integrada

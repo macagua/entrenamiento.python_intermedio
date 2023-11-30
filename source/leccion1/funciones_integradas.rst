@@ -744,12 +744,6 @@ Lee una :ref:`cadena de caracteres <python_str>` desde la entrada estándar.
     Por favor, ingresa un dato: 23.4
     23.4
     <type 'float'>
-    >>> dato = input("Por favor, ingresa un dato: ")
-    ... dato
-    ... type(dato)
-    Por favor, ingresa un dato: 23L
-    23L
-    <type 'long'>
 
 
 En el caso que quiera ingresar una :ref:`cadena de caracteres <python_str>` desde la
@@ -824,8 +818,8 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
 bin()
 ~~~~~
 
-Devuelve una representación binaria de un :ref:`número entero <python_num_entero>`
-o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a binario.
+Devuelve una representación binaria de un :ref:`número entero <python_num_entero>`, es
+decir, lo convierte de entero a binario.
 
 .. code-block:: pycon
 
@@ -840,10 +834,9 @@ complex()
 
 La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor,
 que crea un :ref:`entero complex <python_num_complex>` a partir de un
-:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`,
-:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por números y
-hasta un punto), o una :ref:`cadena de caracteres <python_str>` que sean coherentes
-con un número entero.
+:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>` (cadenas de
+caracteres formadas por números y hasta un punto), o una :ref:`cadena de caracteres <python_str>`
+que sean coherentes con un número entero.
 
 .. code-block:: pycon
 
@@ -891,10 +884,9 @@ float()
 
 La función ``float()`` devuelve un número coma flotante ``float``. Es un constructor,
 que crea un :ref:`coma flotante <python_num_float>` a partir de un
-:ref:`entero <python_num_entero>`, :ref:`entero long <python_num_entero_long>`,
-:ref:`entero float <python_num_float>` (cadenas de caracteres formadas por
-números y hasta un punto) o una :ref:`cadena de caracteres <python_str>` que sean
-coherentes con un número entero.
+:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>` (cadenas de
+caracteres formadas por números y hasta un punto) o una :ref:`cadena de caracteres <python_str>`
+que sean coherentes con un número entero.
 
 .. code-block:: pycon
 
@@ -915,9 +907,8 @@ coherentes con un número entero.
 hex()
 ~~~~~
 
-Devuelve una representación hexadecimal de un :ref:`número entero <python_num_entero>`
-o :ref:`entero long <python_num_entero_long>`, es decir, lo convierte de entero a
-hexadecimal.
+Devuelve una representación hexadecimal de un :ref:`número entero <python_num_entero>`,
+es decir, lo convierte de entero a hexadecimal.
 
 .. code-block:: pycon
 
@@ -964,49 +955,6 @@ excepción :ref:`ValueError <python_exception_valueerror>`.
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     ValueError: invalid literal for int() with base 10: 'doscientos'
-
-
-.. _python_fun_long:
-
-long()
-~~~~~~
-
-La función ``long()`` devuelve un número entero ``long``. Es un constructor, que crea
-un :ref:`entero long <python_num_entero_long>` a partir de un
-:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>`
-o una :ref:`cadena de caracteres <python_str>` que sean coherentes con un número
-entero.
-
-.. code-block:: pycon
-
-    >>> long(23)
-    23L
-    >>> long(23.4)
-    23L
-
-También puede convertir una :ref:`cadena de caracteres <python_str>` a un número entero.
-
-.. code-block:: pycon
-
-    >>> long("23")
-    23
-
-
-La función ``long()`` sólo procesa correctamente cadenas que contengan exclusivamente
-números. Si la cadena contiene cualquier otro carácter, la función devuelve una
-excepción :ref:`ValueError <python_exception_valueerror>`.
-
-.. code-block:: pycon
-
-    >>> long("23.4")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ValueError: invalid literal for long() with base 10: '23.4'
-    >>>
-    >>> long("23,4")
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ValueError: invalid literal for long() with base 10: '23,4'
 
 
 .. _python_fun_max:
