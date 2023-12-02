@@ -183,18 +183,14 @@ sumar dos :ref:`números <python_int>`:
     7
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
 .. disqus::
-
-
-
-.. raw:: html
-   :file: ../_templates/partials/soporte_profesional.html

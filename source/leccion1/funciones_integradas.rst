@@ -2375,6 +2375,13 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
     - https://docs.python.org/es/3.7/library/functions.html
 
 
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

@@ -51,6 +51,8 @@ Apéndices
 
    acerca_de
    esquema
+   lecturas
+   apendices/anexos
    copyright
    licencia
    por_mejorar

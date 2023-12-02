@@ -459,6 +459,13 @@ Una vez creada la nueva clase que hereda de ``log_it``, si usa ``@email_log_it``
 como decorador tendrá el mismo comportamiento, pero además enviará un correo electrónico.
 
 
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

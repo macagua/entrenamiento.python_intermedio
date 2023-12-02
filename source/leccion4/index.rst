@@ -318,6 +318,13 @@ junto con el mismo módulo Python "**os.py**".
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

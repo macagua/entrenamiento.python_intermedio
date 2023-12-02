@@ -78,13 +78,13 @@ de este tipo de funciones:
     .. todo::
         TODO terminar de escribir la sección Funciones recursivas.
 
+
 ----
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion1>`
     del entrenamiento para ampliar su conocimiento en esta temática.
-
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html

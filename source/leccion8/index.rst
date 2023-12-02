@@ -546,18 +546,14 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
         $ python tipo_conjuntos.py
 
 
+----
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
 .. disqus::
-
-
-
-.. raw:: html
-   :file: ../_templates/partials/soporte_profesional.html

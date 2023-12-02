@@ -73,6 +73,13 @@ De esta forma se escribí y lee un archivo JSON.
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion10>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

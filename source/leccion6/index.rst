@@ -47,5 +47,12 @@ La sentencia ``else`` tiene la ventaja de mantener el mismo nombre y la misma si
 que en las demás estructuras de control.
 
 
+----
+
+.. seealso::
+
+    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion6>`
+    del entrenamiento para ampliar su conocimiento en esta temática.
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
