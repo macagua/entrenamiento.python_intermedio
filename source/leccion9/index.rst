@@ -10,7 +10,7 @@ Los métodos mágicos son métodos especiales que empiezan y terminan con dos gu
 También se les llama métodos *dunder*, por la abreviatura de "double underscore". Los métodos
 mágicos no se deben invocar directamente por el usuario, sino que se ejecutan internamente por
 la clase en ciertas situaciones. Por ejemplo, cuando se suma dos números usando el :ref:`operador + <python_opers_arit_suma>`,
-internamente se llama al método __add__().
+internamente se llama al método ``__add__()``.
 
 Las clases integradas en Python definen muchos métodos mágicos. Puedes usar la función ``dir()``
 para ver el número de métodos mágicos heredados por una clase.
@@ -36,7 +36,7 @@ Por ejemplo, el siguiente código muestra todos los atributos y métodos definid
 
 
 Como puedes ver, la clase int incluye varios métodos mágicos rodeados por dos guiones bajos.
-Por ejemplo, el método __add__:
+Por ejemplo, el método ``__add__``:
 
 
 .. _python_metodo_add:
@@ -45,8 +45,8 @@ Por ejemplo, el método __add__:
 Método __add__
 --------------
 
-Es un método mágico que se usa cuando se suman dos números usando el operador +. Considera el
-siguiente ejemplo:
+Es un método mágico que se usa cuando se suman dos números usando el :ref:`operador + <python_opers_arit_suma>`.
+Considera el siguiente ejemplo:
 
 .. code-block:: pycon
 
@@ -57,10 +57,10 @@ siguiente ejemplo:
     >>>
 
 
-Como puedes ver, cuando haces ``num + 10``, el :ref:`operador + <python_opers_arit_suma>` llama al método __add__(10).
-También puedes llamar a ``num.__add__(5)`` directamente, lo que dará el mismo resultado. Sin embargo, como se mencionó
-antes, los métodos mágicos no se deben llamar directamente, sino internamente, a través de otros
-métodos o acciones.
+Como puedes ver, cuando haces ``num + 10``, el :ref:`operador + <python_opers_arit_suma>` llama al método
+``__add__(10)``. También puedes llamar a ``num.__add__(5)`` directamente, lo que dará el mismo resultado.
+Sin embargo, como se mencionó antes, los métodos mágicos no se deben llamar directamente, sino internamente,
+a través de otros métodos o acciones.
 
 Los métodos mágicos se usan con más frecuencia para definir comportamientos sobrecargados de los
 operadores predefinidos en Python. Por ejemplo, los operadores aritméticos por defecto operan
@@ -73,8 +73,8 @@ El :ref:`operador + <python_opers_arit_suma>` también está definido como un op
 el :ref:`operador + <python_opers_arit_suma>` está sobrecargado.
 
 Para hacer que el comportamiento sobrecargado esté disponible en tu propia clase personalizada, el método mágico
-correspondiente debe ser redefinido. Por ejemplo, para usar el :ref:`operador + <python_opers_arit_suma>` con objetos de una clase
-definida por el usuario, debe incluir el método ``__add__()``. Veamos cómo implementar y usar algunos de
+correspondiente debe ser redefinido. Por ejemplo, para usar el :ref:`operador + <python_opers_arit_suma>` con objetos de
+una clase definida por el usuario, debe incluir el método ``__add__()``. Veamos cómo implementar y usar algunos de
 los métodos mágicos más importantes.
 
 
@@ -84,9 +84,9 @@ Método __new__
 --------------
 
 Es un método mágico que se usa para crear una nueva instancia de una clase. Se llama antes
-que el método __init__(), que es el constructor de la clase. El método __new__() recibe la clase como
+que el método ``__init__()``, que es el constructor de la clase. El método ``__new__()`` recibe la clase como
 primer argumento y devuelve una instancia de esa clase. Por ejemplo, el siguiente código crea una clase
-Singleton que solo permite una instancia de sí misma.
+``Singleton`` que solo permite una instancia de sí misma.
 
 .. code-block:: pycon
 
@@ -107,7 +107,7 @@ Singleton que solo permite una instancia de sí misma.
     ...
     >>>
 
-Crear dos objetos de la clase Singleton
+Crear dos objetos de la clase ``Singleton``:
 
 .. code-block:: pycon
 
@@ -116,7 +116,7 @@ Crear dos objetos de la clase Singleton
     >>>
 
 
-Mostrar el id de cada objeto
+Mostrar el id de cada objeto:
 
 .. code-block:: pycon
 
@@ -136,9 +136,9 @@ Método __init__
 ---------------
 
 Es el método mágico que se usa para inicializar una nueva instancia de una clase. Se
-llama después del método __new__(), y recibe la instancia como primer argumento, seguido de los
+llama después del método ``__new__()``, y recibe la instancia como primer argumento, seguido de los
 argumentos que se pasan al constructor de la clase. El método ``__init__()`` no devuelve ningún valor,
-sino que asigna los atributos a la instancia. Por ejemplo, el siguiente código crea una clase Persona
+sino que asigna los atributos a la instancia. Por ejemplo, el siguiente código crea una clase ``Persona``
 que tiene un nombre y una edad como atributos.
 
 .. code-block:: pycon
@@ -155,14 +155,14 @@ que tiene un nombre y una edad como atributos.
     >>>
 
 
-Crear una persona con el nombre "Ana" y la edad 25
+Crear una persona con el nombre "Ana" y la edad 25:
 
 .. code-block:: pycon
 
     >>> p = Persona("Ana", 25)
 
 
-Mostrar los datos de la persona
+Mostrar los datos de la persona:
 
 .. code-block:: pycon
 
@@ -170,7 +170,7 @@ Mostrar los datos de la persona
     Esta persona se llama Ana y tiene 25 años
 
 
-Como puedes ver, el método ``__init__()`` asigna los valores de nombre y edad a la instancia p, que luego
+Como puedes ver, el método ``__init__()`` asigna los valores de nombre y edad a la instancia ``p``, que luego
 se pueden usar en el método ``mostrar()``.
 
 
@@ -180,9 +180,9 @@ Método __str__
 --------------
 
 Es un método mágico que se usa para devolver una representación en forma de cadena de una instancia de una
-clase. Se llama cuando se usa la función str() o cuando se imprime la instancia. El método ``__str__()`` debe
+clase. Se llama cuando se usa la función ``str()`` o cuando se imprime la instancia. El método ``__str__()`` debe
 devolver una cadena que describa el objeto de forma amigable para el usuario. Por ejemplo, el siguiente
-código modifica la clase Persona para incluir el método ``__str__()``.
+código modifica la clase ``Persona`` para incluir el método ``__str__()``.
 
 
 .. code-block:: pycon
@@ -199,14 +199,14 @@ código modifica la clase Persona para incluir el método ``__str__()``.
     >>>
 
 
-Crear una persona con el nombre "Ana" y la edad 25
+Crear una persona con el nombre "Ana" y la edad 25:
 
 .. code-block:: pycon
 
     >>> p = Persona("Ana", 25)
     >>>
 
-Imprimir la persona usando el método __str__()
+Imprimir la persona usando el método ``__str__()``:
 
 .. code-block:: pycon
 
@@ -224,10 +224,10 @@ Método __repr__
 ---------------
 
 Es un método mágico que se usa para devolver una representación en forma de cadena de una instancia de
-una clase. Se llama cuando se usa la función repr() o cuando se muestra la instancia en el intérprete
-interactivo. El método __repr__() debe devolver una cadena que sea una expresión válida de Python que
+una clase. Se llama cuando se usa la función ``repr()`` o cuando se muestra la instancia en el intérprete
+interactivo. El método ``__repr__()`` debe devolver una cadena que sea una expresión válida de Python que
 pueda recrear el objeto. Por ejemplo, el siguiente código modifica la clase Persona para incluir el
-método __repr__().
+método ``__repr__()``.
 
 .. code-block:: pycon
 
@@ -249,7 +249,7 @@ Crear una persona con el nombre "Ana" y la edad 25
     >>> p = Persona("Ana", 25)
     >>>
 
-Mostrar la persona usando el método __repr__()
+Mostrar la persona usando el método ``__repr__()``
 
 .. code-block:: pycon
 
@@ -257,7 +257,7 @@ Mostrar la persona usando el método __repr__()
     Persona('Ana', 25)
     >>>
 
-Como puedes ver, el método __repr__() devuelve una cadena que es una expresión de Python que puede crear
+Como puedes ver, el método ``__repr__()`` devuelve una cadena que es una expresión de Python que puede crear
 una nueva instancia de la persona con los mismos atributos.
 
 
