@@ -4,7 +4,7 @@
 Entrenamiento "Programación en Python 3 - Nivel intermedio"
 ===========================================================
 
-Repositorio de manuales y recursos del entrenamiento "Programación en `Python 3.11`_ - Nivel
+Repositorio de manuales y recursos del entrenamiento "Programación en `Python 3`_ - Nivel
 intermedio" realizado por `Leonardo J. Caballero G.`_.
 
 .. contents :: :local:
@@ -143,6 +143,6 @@ directorio ``docs`` tanto en el idioma Ingles (LICENSE.rst) como el idioma Espa�
 (LICENSE.es.rst).
 
 .. _`Leonardo J. Caballero G.`: https://www.linkedin.com/in/leonardojcaballerog
-.. _`Python 3.11`: https://docs.python.org/es/3.11/
+.. _`Python 3`: https://docs.python.org/es/3.11/
 .. _`entrenamiento.python_intermedio`: https://github.com/macagua/entrenamiento.python_intermedio
 .. _`ticket de soporte`: https://github.com/macagua/entrenamiento.python_intermedio/issues/new

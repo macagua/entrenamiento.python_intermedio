@@ -17,7 +17,7 @@ Lección 1 - Introspección a la programación funcional
 -----------------------------------------------------
 
 **Descripción:** Comprender los conceptos del paradigma de programación funcional
-(Demostrabilidad formal, Modularidad, Facilidad de depuración / pruebas y Componibilidad).
+(demostrabilidad formal, modularidad, facilidad de depuración/pruebas y componibilidad).
 
 **Práctica:** Exponer los fundamentos del paradigma de programación funcional, con algunos
 códigos prácticos y explorar el resultado desde el intérprete Python.
@@ -29,10 +29,10 @@ Lección 2 - Uso avanzado de funciones
 -------------------------------------
 
 **Descripción:** Comprender el uso avanzado de funciones, uso de ``*args`` y ``**kwargs``, 
-decoradores, Caching de Funciones.
+decoradores, caching de funciones.
 
-**Práctica:** Exponer los fundamentos avanzado de las funciones, definir decoradores
-personalizados o usar decoradores existentes, definir Caching de funciones y explorar
+**Práctica:** Exponer los fundamentos avanzado de las funciones, crear decoradores
+personalizados o usar decoradores existentes, definir caching de funciones y explorar
 el resultado desde el interprete Python.
 
 

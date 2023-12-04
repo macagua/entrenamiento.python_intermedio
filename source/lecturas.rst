@@ -168,7 +168,8 @@ Lección 8 - Tipo de datos conjuntos y módulo collections
 --------------------------------------------------------
 
 
-- TODO.
+.. todo::
+    TODO terminar de escribir esta sección
 
 
 .. _lectura_extras_leccion9:
@@ -194,11 +195,6 @@ Lección 9 - Métodos mágicos
 
 - `Magic Methods. Python Tutorials. Practity <https://practity.com/magic-methods/>`_.
 
-- `get_object_attribute.py github.com <https://github.com/KHdvip/Python/tree/d5aa6dda3e614cf1d236b03ebe958d7d9f1db63d/Basement%2Fcode%2Fsection_8%2Fget_object_attribute.py>`_.
-
-- `type_object create.py github.com <https://github.com/ASC95/python-tutorial/tree/b0ae621b91300de42a4e0a7881e76df0870aa0f1/libraries%2Fnumpy%2Fpython_369%2Fpython_369%2Fnumpy_118%2Fdtype_object%2Fcreate.py>`_.
-
-
 
 .. _lectura_extras_leccion10:
 
@@ -216,6 +212,7 @@ json - Codificador y decodificador JSON
 - `json - JavaScript Object Notation <https://pymotw.com/3/json/index.html#module-json>`_.
 
 - `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/>`_.
+
 
 .. raw:: html
    :file: _templates/partials/soporte_profesional.html
