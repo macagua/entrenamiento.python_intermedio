@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion4:
 
 Funciones de orden superior
@@ -86,7 +83,7 @@ las cuales son menores de edad:
     ...         self.nombre = nombre
     ...         self.edad = edad
     ...     def __str__(self):
-    ...         return "{} de {} años".format(self.nombre, self.edad)
+    ...         return f"{self.nombre} de {self.edad} años"
     ...
     >>> personas = [
     ...     Persona("Leonardo", 38),
@@ -174,7 +171,7 @@ una serie de objetos sin ningún problema:
     ...         self.nombre = nombre
     ...         self.edad = edad
     ...     def __str__(self):
-    ...         return "{} de {} años".format(self.nombre, self.edad)
+    ...         return f"{self.nombre} de {self.edad} años"
     ...
     >>> personas = [
     ...     Persona("Leonardo", 38),
@@ -206,7 +203,7 @@ objeto:
     ...         self.nombre = nombre
     ...         self.edad = edad
     ...     def __str__(self):
-    ...         return "{} de {} años".format(self.nombre, self.edad)
+    ...         return f"{self.nombre} de {self.edad} años"
     ...
     >>> personas = [
     ...     Persona("Leonardo", 38),
@@ -243,9 +240,16 @@ de rendimiento. No es el caso en Python.
 .. code-block:: pycon
 
     >>> import os
-    >>> archivos = os.listdir(os.__file__.replace("{}os.py".format(os.sep), os.sep))
-    >>> print(list(filter(lambda x: x.startswith("os."), archivos)))
-    ['os.py']
+    >>> archivos = os.listdir(os.__file__.replace("/os.pyc", "/"))
+    >>> print(filter(lambda x: x.startswith("os."), archivos))
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    ['os.pyc', 'os.py']
 
 En el ejemplo anterior se usa el método ``os.__file__`` para obtener la ruta donde
 esta instalada el módulo ``os`` en su sistema, ejecutando la siguiente sentencia:
@@ -253,16 +257,29 @@ esta instalada el módulo ``os`` en su sistema, ejecutando la siguiente sentenci
 .. code-block:: pycon
 
     >>> os.__file__
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     '/usr/lib/python3.11/os.pyc'
 
 Si con el método ``os.__file__`` obtiene la ruta del módulo ``os`` con el método
-``replace("{}os.py".format(os.sep), os.sep)`` busca la cadena de carácter ``/os.py`` para Linux
-y para Windows ``\\os.py`` y la remplaza por la cadena de carácter ``/`` para Linux
-y para Windows ``\\``
+``replace("/os.pyc", "/")`` busca la cadena de carácter "/os.pyc" y la remplaza por
+la cadena de carácter "/"
 
 .. code-block:: pycon
 
-    >>> os.__file__.replace("{}os.py".format(os.sep), os.sep)
+    >>> os.__file__.replace("/os.pyc", "/")
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     '/usr/lib/python3.11/'
 
 Luego se define la variable ``archivos`` generando una lista de archivos usando la
@@ -283,15 +300,22 @@ con un tamaño de *433*, como se puede comprobar a continuación:
     >>> len(archivos)
     443
 
-Opcionalmente puede comprobar si la cadena de caracteres **os.py** se encuentras
+Opcionalmente puede comprobar si la cadena de caracteres :file:`os.pyc` se encuentras
 una de las posiciones de la lista ``archivos``, ejecutando la siguiente sentencia:
 
 .. code-block:: pycon
 
-    >>> "os.py" in archivos
+    >>> "os.pyc" in archivos
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     True
 
-Ya al comprobar que existe la cadena de caracteres "**os.py**" se usa una función
+Ya al comprobar que existe la cadena de caracteres ":file:`os.pyc`" se usa una función
 ``lambda`` como parámetro de la función :ref:`filter() <python_fun_filter>` para
 filtrar todos los archivos del directorio "*/usr/lib/python3.11/*" por medio del función
 ``os.listdir()`` que inicien con la cadena de caracteres "**os.**" usando la función
@@ -300,10 +324,17 @@ filtrar todos los archivos del directorio "*/usr/lib/python3.11/*" por medio del
 .. code-block:: pycon
 
     >>> print(filter(lambda x: x.startswith("os."), os.listdir("/usr/lib/python3.11/")))
-    ['os.py']
 
-Así de esta forma se comprueba que existe el archivo compilado "**os.py**" de Python
-junto con el mismo módulo Python "**os.py**".
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    ['os.pyc', 'os.py']
+
+Así de esta forma se comprueba que existe el archivo compilado ":file:`os.pyc`" de Python
+junto con el mismo módulo Python ":file:`os.py`".
 
 
 .. tip::
@@ -312,6 +343,7 @@ junto con el mismo módulo Python "**os.py**".
 
 ----
 
+
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
@@ -320,12 +352,9 @@ junto con el mismo módulo Python "**os.py**".
 
 ----
 
-.. seealso::
-
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion4>`
-    del entrenamiento para ampliar su conocimiento en esta temática.
 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
