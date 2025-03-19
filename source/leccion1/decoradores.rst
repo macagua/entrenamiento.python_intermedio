@@ -282,8 +282,8 @@ Autorización
 
 Los decoradores permiten verificar si alguien está o no autorizado a usar una
 determinada función, por ejemplo en una aplicación web. Son muy usados en *frameworks*
-como `Flask`_ o `Django`_. Aquí se muestra como usar un decorador para verificar
-que se está autenticado.
+como :ref:`Flask <python_flask_introduccion>` o :ref:`Django <python_django_introduccion>`.
+Aquí se muestra como usar un decorador para verificar que se está autenticado.
 
 **Ejemplo:**
 
@@ -469,5 +469,4 @@ como decorador tendrá el mismo comportamiento, pero además enviará un correo 
 ..
   .. disqus::
 
-.. _`Flask`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion6/index.html
-.. _`Django`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion7/index.html
+.. _``: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion7/index.html
