@@ -98,4 +98,3 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
     :align: center
 
     Vídeo `13.- Curso Python - For <https://www.youtube.com/watch?v=aqnjB3dydik>`_, cortesía de `CodigoFacilito.com`_.
-

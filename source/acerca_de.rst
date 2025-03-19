@@ -21,7 +21,7 @@ Novatos en la programación
 --------------------------
 
 Para los novatos en la programación si requieren dominar la algoritmia y el lenguaje de programación
-se tiene diseñado varios temarios y practicas en este entrenamiento para poder entender los conceptos
+se tiene diseñado varios temarios y prácticas en este entrenamiento para poder entender los conceptos
 y las mejores prácticas actuales del desarrollo en Python.
 
 La planificación de este entrenamiento se estima en:
@@ -33,7 +33,7 @@ Programadores que desconocen Python
 -----------------------------------
 
 Para los programadores que desconocen Python, si quieren dominar el lenguaje de programación se tiene
-diseñado varios temarios y practicas en este entrenamiento para las personas que son nuevas usándolo o
+diseñado varios temarios y prácticas en este entrenamiento para las personas que son nuevas usándolo o
 los que quieren aprender acerca de las mejores prácticas actuales del desarrollo en Python.
 
 La planificación de este entrenamiento se estima en:
@@ -93,9 +93,6 @@ el tutorial. La lista completa de colaboradores está disponible en el repositor
 .. contributors:: macagua/entrenamiento.python_intermedio
    :avatars:
    :exclude: dependabot[bot]
-
-.. todo::
-    TODO corregir alineación de avatar de los colaboradores.
 
 Es muy fácil entrar en la lista. Simplemente escriba un artículo o proponga cambios
 en el repositorio del entrenamiento. Y obtenga el agradecimiento de todos.

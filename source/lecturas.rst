@@ -217,4 +217,5 @@ json - Codificador y decodificador JSON
 .. raw:: html
    :file: _templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+    .. disqus::

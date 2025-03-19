@@ -28,7 +28,7 @@ códigos prácticos y explorar el resultado desde el intérprete Python.
 Lección 2 - Uso avanzado de funciones
 -------------------------------------
 
-**Descripción:** Comprender el uso avanzado de funciones, uso de ``*args`` y ``**kwargs``, 
+**Descripción:** Comprender el uso avanzado de funciones, uso de ``*args`` y ``**kwargs``,
 decoradores, caching de funciones.
 
 **Práctica:** Exponer los fundamentos avanzado de las funciones, crear decoradores
@@ -43,7 +43,7 @@ Lección 3 - Iteradores y Generadores
 
 **Descripción:** Conocer las capacidades de los generadores que ofrece el lenguaje.
 
-**Práctica:** Ejemplos de creación y asignación de generadores, uso de funciones como 
+**Práctica:** Ejemplos de creación y asignación de generadores, uso de funciones como
 ``__iter__``, ``__next__``, la expresión ``yield`` y explorar el resultado desde el interprete Python.
 
 
@@ -63,7 +63,7 @@ ademas del módulo ``functools`` y explorar el resultado desde el intérprete Py
 Lección 5 - Funciones Lambda
 ----------------------------
 
-**Descripción:** Comprender el uso de las funciones, decoradores y el paradigma de 
+**Descripción:** Comprender el uso de las funciones, decoradores y el paradigma de
 programación estructurada.
 
 **Práctica:** Ejemplos de creación de funciones, programar de forma estructurada y
