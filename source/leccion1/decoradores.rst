@@ -469,4 +469,3 @@ como decorador tendrá el mismo comportamiento, pero además enviará un correo 
 ..
   .. disqus::
 
-.. _``: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion7/index.html
