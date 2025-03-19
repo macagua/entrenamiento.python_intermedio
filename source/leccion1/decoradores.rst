@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_decoradores:
 
 Decoradores
@@ -115,7 +112,7 @@ no los usas la función es pasada y puede ser asignada a una variable sin ser ej
 
 Va a analizar el código paso por paso. Al principio usa ``hey = hola()``, por lo que el
 parámetro para ``nombre`` que se toma es "Plone" ya que es el que se ha asignado por
-defecto. Esto hará que en el ``if`` se entre en ``nombre == "Plone"``, lo que hará que
+defecto. Esto hará que en el :ref:`if <python_sent_if>` se entre en ``nombre == "Plone"``, lo que hará que
 se devuelva la función saluda. Si por lo contrario hace la llamada a la función con
 ``hey = hola(nombre="Pelayo")``, la función devuelta será ``bienvenida``.
 
@@ -343,7 +340,7 @@ también acepta parámetros de entrada.
 Anidando un Decorador dentro de una Función
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Vaya de vuelta al ejemplo de inicio de sesión, y cree un *wraper* que permita
+Vaya de vuelta al ejemplo de inicio de sesión, y cree un *wrapper* que permita
 especificar el archivo de salida que quiere usar para el archivo de *log*. Si
 se fijas, el decorador ahora acepta un parámetro de entrada.
 
@@ -396,7 +393,7 @@ definir ``log_it``, pero en este caso como una clase en vez de con una función.
 
 .. code:: pycon
 
-    >>> class log_it(object):
+    >>> class log_it:
     ...     _logfile = "out.log"
     ...     def __init__(self, function):
     ...         self.function = function
@@ -469,7 +466,8 @@ como decorador tendrá el mismo comportamiento, pero además enviará un correo 
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`Flask`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion6/index.html
 .. _`Django`: https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion7/index.html
