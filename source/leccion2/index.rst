@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion2:
 
 Uso avanzado de funciones
@@ -14,8 +11,8 @@ En Python hay varias funciones avanzadas que se describen a continuación:
 Funciones de predicado
 ----------------------
 
-Las funciones de predicado no es más que una función la cual dice si algo es ``True``
-o ``False``, es decir, es una función que devuelve un tipo de datos
+Las funciones de predicado no es más que una función la cual dice si algo es :ref:`True <python_bool>`
+o :ref:`False <python_bool>`, es decir, es una función que devuelve un tipo de datos
 :ref:`booleano <python_bool>`.
 
 .. comments:
@@ -146,6 +143,7 @@ Ejemplos de funciones avanzadas
 
 A continuación, se presentan algunos ejemplos de su uso:
 
+
 **Función lambda - operaciones aritméticas**
 
 A continuación, se presenta un ejemplo para comprobar si un número es impar:
@@ -190,7 +188,12 @@ sumar dos :ref:`números <python_int>`:
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
+
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
