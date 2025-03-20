@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_fun_builtins:
 
 Funciones integradas
@@ -103,7 +100,7 @@ Imprime el texto de la nota de copyright.
 .. code-block:: pycon
 
     >>> copyright()
-    Copyright (c) 2001-2016 Python Software Foundation.
+    Copyright (c) 2001-2023 Python Software Foundation.
     All Rights Reserved.
 
     Copyright (c) 2000 BeOpen.com.
@@ -114,7 +111,7 @@ Imprime el texto de la nota de copyright.
 
     Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
     All Rights Reserved.
-
+    >>>
 
 .. _python_fun_dir:
 
@@ -136,36 +133,35 @@ legibles desde este.
 .. code-block:: pycon
 
     >>> dir(__builtins__)
-    ['ArithmeticError', 'AssertionError', 'AttributeError',
-    'BaseException', 'BufferError', 'BytesWarning',
-    'DeprecationWarning', 'EOFError', 'Ellipsis',
-    'EnvironmentError', 'Exception', 'False', 'FloatingPointError',
-    'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError',
-    'ImportWarning', 'IndentationError', 'IndexError', 'KeyError',
-    'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError',
-    'None', 'NotImplemented', 'NotImplementedError', 'OSError',
-    'OverflowError', 'PendingDeprecationWarning', 'ReferenceError',
-    'RuntimeError', 'RuntimeWarning', 'StandardError',
-    'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError',
-    'SystemExit', 'TabError', 'True', 'TypeError',
-    'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError',
-    'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning',
-    'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError',
-    '_', '__debug__', '__doc__', '__import__', '__name__',
-    '__package__', 'abs', 'all', 'any', 'apply', 'basestring',
-    'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable',
-    'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex',
-    'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod',
-    'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter',
-    'float', 'format', 'frozenset', 'getattr', 'globals',
-    'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int',
-    'intern', 'isinstance', 'issubclass', 'iter', 'len',
-    'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview',
-    'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print',
-    'property', 'quit', 'range', 'reduce', 'reload',
-    'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted',
-    'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr',
-    'vars', 'zip']
+    ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException',
+    'BaseExceptionGroup', 'BlockingIOError', 'BrokenPipeError', 'BufferError',
+    'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError',
+    'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError',
+    'Ellipsis', 'EncodingWarning', 'EnvironmentError', 'Exception', 'ExceptionGroup',
+    'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError',
+    'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning',
+    'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError',
+    'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError',
+    'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError',
+    'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError',
+    'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning',
+    'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration',
+    'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError',
+    'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError',
+    'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning',
+    'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError',
+    '__IPYTHON__', '__build_class__', '__debug__', '__doc__', '__import__',
+    '__loader__', '__name__', '__package__', '__spec__', 'abs', 'aiter',
+    'all', 'anext', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray',
+    'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright',
+    'credits', 'delattr', 'dict', 'dir', 'display', 'divmod', 'enumerate', 'eval',
+    'exec', 'filter', 'float', 'format', 'frozenset', 'get_ipython', 'getattr',
+    'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance',
+    'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max',
+    'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print',
+    'property', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice',
+    'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars',
+    'zip']
 
 Si el objeto soporta un método llamado ``__dir__``, ese será usado; de lo contrario se usa
 la lógica ``dir()`` predeterminada y devuelve:
@@ -216,7 +212,7 @@ la lógica ``dir()`` predeterminada y devuelve:
 
 .. code-block:: pycon
 
-    >>> class Persona(object):
+    >>> class Persona:
     ...     """Clase que representa una Persona"""
     ...     def __init__(self, cedula, nombre, apellido, sexo):
     ...         """Constructor de clase Persona"""
@@ -274,21 +270,21 @@ la lógica ``dir()`` predeterminada y devuelve:
     >>> type(int)
     <type 'type'>
     >>> dir(int)
-    ['__abs__', '__add__', '__and__', '__class__', '__cmp__',
-    '__coerce__', '__delattr__', '__div__', '__divmod__',
-    '__doc__', '__float__', '__floordiv__', '__format__',
-    '__getattribute__', '__getnewargs__', '__hash__', '__hex__',
-    '__index__', '__init__', '__int__', '__invert__', '__long__',
-    '__lshift__', '__mod__', '__mul__', '__neg__', '__new__',
-    '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__',
-    '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__',
-    '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__',
-    '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__',
-    '__rshift__', '__rsub__', '__rtruediv__', '__rxor__',
-    '__setattr__', '__sizeof__', '__str__', '__sub__',
-    '__subclasshook__', '__truediv__', '__trunc__', '__xor__',
-    'bit_length', 'conjugate', 'denominator', 'imag', 'numerator',
-    'real']
+    ['__abs__', '__add__', '__and__', '__bool__', '__ceil__',
+    '__class__', '__delattr__', '__dir__', '__divmod__',
+    '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__',
+    '__format__', '__ge__', '__getattribute__', '__getnewargs__',
+    '__getstate__', '__gt__', '__hash__', '__index__', '__init__',
+    '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__',
+    '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__',
+    '__or__', '__pos__', '__pow__', '__radd__', '__rand__',
+    '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__',
+    '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__',
+    '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__',
+    '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__',
+    '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__',
+    'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate',
+    'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
 
 
 .. _python_fun_eval:
@@ -364,10 +360,15 @@ Invoca el menú de ayuda del intérprete de Python:
 
     >>> help()
 
-    Welcome to Python 3.7's help utility!
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
+    Welcome to Python 3.11's help utility!
 
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at https://docs.python.org/3.7/tutorial/.
+    the tutorial on the internet at https://docs.python.org/3.11/tutorial/.
 
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
@@ -422,33 +423,54 @@ Imprime el texto de la licencia.
 .. code-block:: pycon
 
     >>> license
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     Type license() to see the full license text
+
+Muestre la licencia de Pythonm, ejecutando el siguiente comando:
+
+.. code-block:: pycon
+
     >>> license()
+
+
+Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+.. code-block:: pycon
+    :class: no-copy
+
     A. HISTORY OF THE SOFTWARE
     ==========================
 
     Python was created in the early 1990s by Guido van Rossum at Stichting
-    Mathematisch Centrum (CWI, see http://www.cwi.nl) in the Netherlands
+    Mathematisch Centrum (CWI, see https://www.cwi.nl) in the Netherlands
     as a successor of a language called ABC.  Guido remains Python's
     principal author, although it includes many contributions from others.
 
     In 1995, Guido continued his work on Python at the Corporation for
-    National Research Initiatives (CNRI, see http://www.cnri.reston.va.us)
+    National Research Initiatives (CNRI, see https://www.cnri.reston.va.us)
     in Reston, Virginia where he released several versions of the
     software.
 
     In May 2000, Guido and the Python core development team moved to
     BeOpen.com to form the BeOpen PythonLabs team.  In October of the same
-    year, the PythonLabs team moved to Digital Creations (now Zope
-    Corporation, see http://www.zope.com).  In 2001, the Python Software
-    Foundation (PSF, see https://www.python.org/psf/) was formed, a
-    non-profit organization created specifically to own Python-related
-    Intellectual Property.  Zope Corporation is a sponsoring member of
-    the PSF.
+    year, the PythonLabs team moved to Digital Creations, which became
+    Zope Corporation.  In 2001, the Python Software Foundation (PSF, see
+    https://www.python.org/psf/) was formed, a non-profit organization
+    created specifically to own Python-related Intellectual Property.
+    Zope Corporation was a sponsoring member of the PSF.
 
-    All Python releases are Open Source (see http://www.opensource.org for
+    All Python releases are Open Source (see https://opensource.org for
+    the Open Source Definition).  Historically, most, but not all, Python
     Hit Return for more, or q (and Return) to quit:
 
+Presione la tecla :keys:`Return` para mas informacion. Para salir de la lectura
+de la licencia presione la tecla :keys:`q`.
 
 .. _python_fun_locals:
 
@@ -479,12 +501,13 @@ pueden ser extraídos usando la función integrada ``keys()``.
 open()
 ~~~~~~
 
-La función ``open()`` es definida dentro del modulo integrado ``io``, esta le permite
+La función ``open()`` es definida dentro del módulo integrado ``io``, esta le permite
 :ref:`abrir un archivo <python_abrir_archivo>` usando el tipo objeto ``file``, devuelve
 un objeto del tipo :ref:`file <python_cls_file>` (ej. *archivo*), y se llama
 habitualmente con de dos a tres argumentos:
 
-::
+.. code-block:: pycon
+    :class: no-copy
 
     file(nombre[, modo[, buffering]]) -> objeto archivo
 
@@ -582,7 +605,8 @@ Cuando el ``paso`` es definido como un tercer argumento, ese especifica el incre
 En el ejemplo anterior, la función ``range(3,9,2)`` devuelve **[3, 5, 7]**, es decir,
 el rango inicia en **3** y termina en **9** incrementando cada **2** :ref:`números <python_int>`.
 
-::
+.. code-block:: pycon
+    :class: no-copy
 
     range(detener) -> lista de enteros
 
@@ -601,24 +625,26 @@ final es omitido! Hay exactamente los indices validos para una :ref:`lista <pyth
 reload()
 ~~~~~~~~
 
-Cuando el modulo es importado dentro de un script, el código en la porción del nivel
-superior de un modulo es ejecutado solamente una vez.
+Cuando el módulo es importado dentro de un script, el código en la porción del nivel
+superior de un módulo es ejecutado solamente una vez.
 
 Por lo tanto, si usted quiere volver a ejecutar la porción del nivel superior el código
-de un modulo, usted puede usar la función ``reload()``. Esta función importa otra vez
-un modulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
+de un módulo, usted puede usar la función ``reload()``. Esta función importa otra vez
+un módulo previamente importado. La sintaxis de la función ``reload()`` es la siguiente:
 
 .. code-block:: pycon
 
+    >>> from importlib import reload
     >>> reload(module_name)
 
-Aquí, ``module_name`` es el nombre del modulo que usted quiere volver a cargar y no la
+Aquí, ``module_name`` es el nombre del módulo que usted quiere volver a cargar y no la
 :ref:`cadena de caracteres <python_str>` contendiente el nombre del modulo. Por ejemplo,
-para recargar el modulo ``clases.py``, debe hacer lo siguiente:
+para recargar el módulo :file:`clases.py`, debe hacer lo siguiente:
 
 .. code-block:: pycon
 
     >>> import clases
+    >>> from importlib import reload
     >>> reload(clases)
 
 
@@ -655,7 +681,7 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 
 .. tip::
 
-    La función ``type()`` devuelve el tipo del objeto, en base al modulo integrado
+    La función ``type()`` devuelve el tipo del objeto, en base al módulo integrado
     ``types``, el cual define los nombres para todos los símbolos tipo conocidos
     en el interprete estándar.
 
@@ -663,6 +689,11 @@ La función ``type()`` devuelve el tipo del objeto que recibe como argumento.
 
         >>> import types
         >>> help(types)
+
+    Si ejecuto el comando anterior, este da como resultado lo siguiente:
+
+    .. code-block:: pycon
+        :class: no-copy
 
         Help on module types:
 
@@ -818,8 +849,8 @@ Devuelve el valor absoluto de un número (entero o de coma flotante).
 bin()
 ~~~~~
 
-Devuelve una representación binaria de un :ref:`número entero <python_num_entero>`, es
-decir, lo convierte de entero a binario.
+Devuelve una representación binaria de un :ref:`número entero <python_num_entero>`,
+es decir, lo convierte de entero a binario.
 
 .. code-block:: pycon
 
@@ -834,8 +865,8 @@ complex()
 
 La función ``complex()`` devuelve un número complejo ``complex``. Es un constructor,
 que crea un :ref:`entero complex <python_num_complex>` a partir de un
-:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>` (cadenas de
-caracteres formadas por números y hasta un punto), o una :ref:`cadena de caracteres <python_str>`
+:ref:`entero <python_num_entero>`, :ref:`entero float <python_num_float>` (cadenas
+de caracteres formadas por números y hasta un punto), o una :ref:`cadena de caracteres <python_str>`
 que sean coherentes con un número entero.
 
 .. code-block:: pycon
@@ -1285,13 +1316,18 @@ find()
 ~~~~~~
 
 La función ``find()`` devuelve un valor numérico ``0`` si encuentra el criterio
-de búsqueda o ``-1`` si no coincide el criterio de búsqueda enviado por parámetros
-en la función.
+de búsqueda como se muestra a continuación:
 
 .. code-block:: pycon
 
     >>> "leonardo caballero".find("leo")
     0
+
+devuelve un valor numérico ``-1`` si no coincide el criterio de búsqueda enviado
+por parámetros en la función como se muestra a continuación:
+
+.. code-block:: pycon
+
     >>> "leonardo caballero".find("ana")
     -1
 
@@ -1474,7 +1510,7 @@ Esencialmente, la función ``intern()`` busca (o almacena si no está presente) 
 :ref:`cadena de caracteres <python_str>` en una colección de cadenas de caracteres internadas, por lo
 que todas las instancias internadas compartirán la misma identidad. Cambia el costo
 único de buscar esta cadena de caracteres para realizar comparaciones más rápidas
-(la comparación puede devolver ``True`` después de solo verificar la identidad, en
+(la comparación puede devolver :ref:`True <python_bool>` después de solo verificar la identidad, en
 lugar de tener que comparar cada carácter), y reducir el uso de la memoria.
 
 Sin embargo, Python internará automáticamente :ref:`cadena de caracteres <python_str>` que sean pequeñas
@@ -1490,7 +1526,7 @@ A continuación uno ejemplo de comparación de :ref:`cadena de caracteres <pytho
     True
     >>> cadena0 is cadena1
     True
-    >>> cadena0, cadena1 = "python 3.7", "python 3.7"
+    >>> cadena0, cadena1 = "python 3.11", "python 3.11"
     >>> cadena0 is cadena1
     False
 
@@ -1862,7 +1898,7 @@ all()
 ~~~~~
 
 La función ``all()`` toma un contenedor como un argumento. Esta devuelve las funciones
-integradas ``True`` si todo los valores en el objeto iterable python tienen un valor
+integradas ``True`` si todo los valores en el objeto iterable Python tienen un valor
 de tipo :ref:`booleano <python_bool>` igual a ``True``. Un valor vacío tiene un tipo
 :ref:`booleano <python_bool>` igual a ``False``.
 
@@ -1922,33 +1958,33 @@ esta función se usa crear un :ref:`diccionario <python_dict>`:
 
 .. code-block:: pycon
 
-    >>> dict(python=3.7, zope=5.2, plone=6.0)
-    {'zope': 5.2, 'python': 3.7, 'plone': 6.0}
+    >>> dict(python=3.11, zope=5.2, plone=6.0)
+    {'zope': 5.2, 'python': 3.11, 'plone': 6.0}
 
 También puede crear un :ref:`diccionario <python_dict>` indicando a las claves usando comillas simples:
 
 .. code-block:: pycon
 
-    >>> {"python": 3.7, "zope": 5.2, "plone": 6.0}
-    {'python': 3.7, 'zope': 2, 'plone': 6.0}
-    >>> dict({"python": 3.7, "zope": 5.2, "plone": 6.0})
-    {{'python': 3.7, 'zope': 5.2, 'plone': 6.0}
+    >>> {"python": 3.11, "zope": 5.2, "plone": 6.0}
+    {'python': 3.11, 'zope': 2, 'plone': 6.0}
+    >>> dict({"python": 3.11, "zope": 5.2, "plone": 6.0})
+    {{'python': 3.11, 'zope': 5.2, 'plone': 6.0}
 
 Convertir desde un grupo de dos :ref:`listas <python_list>` de forma recursiva usando
 la función :ref:`zip() <python_fun_zip>` a tipo :ref:`diccionario <python_dict>`:
 
 .. code-block:: pycon
 
-    >>> dict(zip(["python", "zope", "plone"], [3.7, 5.2, 6.0]))
-    {'python': 3.7, 'zope': 5.2, 'plone': 6.0}
+    >>> dict(zip(["python", "zope", "plone"], [3.11, 5.2, 6.0]))
+    {'python': 3.11, 'zope': 5.2, 'plone': 6.0}
 
 Convertir desde un grupo de :ref:`tuplas <python_tuple>` respectivamente en una
 :ref:`lista <python_list>` a tipo :ref:`diccionario <python_dict>`:
 
 .. code-block:: pycon
 
-    >>> dict([("zope", 5.2), ("python", 3.7), ("plone", 6.0)])
-    {'plone': 6.0, 'zope': 5.2, 'python': 3.7}
+    >>> dict([("zope", 5.2), ("python", 3.11), ("plone", 6.0)])
+    {'plone': 6.0, 'zope': 5.2, 'python': 3.11}
 
 
 .. _python_fun_frozenset:
@@ -2123,8 +2159,8 @@ más corta.
 
 .. code-block:: pycon
 
-    >>> zip(["python", "zope", "plone"], [3.7, 5.2, 6.0])
-    [('python', 3.7), ('zope', 5.2), ('plone', 6.0)]
+    >>> zip(["python", "zope", "plone"], [3.11, 5.2, 6.0])
+    [('python', 3.11), ('zope', 5.2), ('plone', 6.0)]
 
 
 ----
@@ -2287,7 +2323,7 @@ Un ejemplo de uso con la clase ``Persona`` seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve ``True`` si le objeto es
+Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve :ref:`True <python_bool>` si le objeto es
 uno de los tipos en la :ref:`tupla <python_tuple>`.
 
 .. code-block:: pycon
@@ -2329,7 +2365,7 @@ seria como lo siguiente:
     True
 
 
-Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve ``True`` si le objeto es
+Si el tipo de parámetro es una :ref:`tupla <python_tuple>`, esta función devuelve :ref:`True <python_bool>` si le objeto es
 uno de los tipos en la :ref:`tupla <python_tuple>`.
 
 .. code-block:: pycon
@@ -2372,7 +2408,7 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
     La lista de todas las funciones disponibles en el lenguaje Python con la descripción
     correspondiente se puede encontrar en la siguiente dirección URL:
 
-    - https://docs.python.org/es/3.7/library/functions.html
+    - https://docs.python.org/es/3.11/library/functions.html
 
 
 ----
@@ -2385,4 +2421,5 @@ La función ``setattr()`` establecer un atributo con nombre en un objeto;
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::

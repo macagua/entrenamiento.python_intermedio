@@ -452,6 +452,7 @@ método integrado :ref:`items() <python_dict_mtd_items>`:
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
 
 .. _`iterator protocol`: https://docs.python.org/es/3.7/library/stdtypes.html#iterator-types

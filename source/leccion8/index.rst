@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _python_leccion8:
 
 Tipo de datos conjuntos y módulo collections
@@ -217,7 +214,7 @@ todos los conjuntos.
 isdisjoint()
 ~~~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si no hay elementos comunes entre los
+Este método devuelve el valor :ref:`True <python_bool>` si no hay elementos comunes entre los
 **conjuntos mutables** o **conjuntos inmutables**.
 
 .. code-block:: pycon
@@ -236,7 +233,7 @@ Este método devuelve el valor ``True`` si no hay elementos comunes entre los
 issubset()
 ~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subconjunto* del
+Este método devuelve el valor :ref:`True <python_bool>` si el **conjunto mutable** es un *subconjunto* del
 **conjunto mutable** o del **conjunto inmutable** argumento.
 
 .. code-block:: pycon
@@ -261,7 +258,7 @@ Este método devuelve el valor ``True`` si el **conjunto mutable** es un *subcon
 issuperset()
 ~~~~~~~~~~~~
 
-Este método devuelve el valor ``True`` si el **conjunto mutable** o el **conjunto inmutable**
+Este método devuelve el valor :ref:`True <python_bool>` si el **conjunto mutable** o el **conjunto inmutable**
 es un *superset* del **conjunto mutable** argumento.
 
 .. code-block:: pycon
@@ -508,8 +505,8 @@ A continuación, se presentan un ejemplo de conjuntos ``frozenset``:
     frozenset([2.5, 4, 5, 6, 2.1, 3.6]) <type 'frozenset'>
 
 Los elementos de un set son únicos (sin repeticiones dentro del ``set``), y deben
-ser objetos inmutables: :ref:`números <python_int>`, :ref:`cadena de caracteres <python_str>`,
-:ref:`tuplas <python_tuple>` y sets inmutables, pero no :ref:`listas <python_list>` ni sets mutables.
+ser objetos inmutables: :ref:`números <python_int>`, :ref:`cadena de caracteres <python_str>`, :ref:`tuplas <python_tuple>` y sets inmutables,
+pero no :ref:`listas <python_list>` ni sets mutables.
 
 
 Ayuda integrada
@@ -522,6 +519,8 @@ desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
     >>> help(set)
 
+Para salir de esa ayuda presione la tecla :keys:`q`.
+
 Usted puede consultar toda la documentación disponible sobre los **conjuntos frozenset**
 desde la :ref:`consola interactiva <python_interactivo>` de la siguiente forma:
 
@@ -533,8 +532,11 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
 
 .. important::
-    Usted puede descargar el código usado en esta sección haciendo clic
-    :download:`aquí <../../recursos/leccion8/tipo_conjuntos.py>`.
+    Usted puede descargar el código usado en esta sección haciendo clic en el
+    siguiente enlace:
+
+
+    - :download:`tipo_conjuntos.py <../../recursos/leccion8/tipo_conjuntos.py>`.
 
 
 .. tip::
@@ -543,17 +545,23 @@ Para salir de esa ayuda presione la tecla :keys:`q`.
 
     .. code-block:: console
 
-        $ python tipo_conjuntos.py
+        python3 tipo_conjuntos.py
 
 
 ----
+
 
 .. seealso::
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion8>`
     del entrenamiento para ampliar su conocimiento en esta temática.
 
+
+----
+
+
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
-.. disqus::
+..
+  .. disqus::
