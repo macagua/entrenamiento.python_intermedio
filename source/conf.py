@@ -29,7 +29,7 @@ project = project_short_name[0].capitalize() + project_short_name[1:43]
 project_name = project_namecode.replace(".", "")
 project_details = f"Entrenamiento de {project_short_name}"
 publisher = "Leonardo J. Caballero G."
-years = "2022 - 2025"
+years = "2022 - 2026"
 copyright = f"{years}, {publisher}"
 author = publisher
 
@@ -260,41 +260,41 @@ html_theme_options = {
         {
             "icon": "fontawesome/brands/linkedin",
             "link": "https://linkedin.com/in/leonardojcaballerog",
-            "name": "My Linkedin",
+            "name": "Mi Linkedin",
         },
         {
             "icon": "fontawesome/brands/twitter",
             "link": "https://twitter.com/macagua",
-            "name": "My Twitter",
+            "name": "Mi Twitter",
         },
         {
             "icon": "fontawesome/brands/github",
             "link": "https://github.com/macagua",
-            "name": "My Github",
+            "name": "Mi Github",
         },
         {
             "icon": "fontawesome/brands/gitlab",
             "link": "https://gitlab.com/macagua",
-            "name": "My Gitlab",
+            "name": "Mi Gitlab",
         },
         {
             "icon": "fontawesome/brands/bitbucket",
             "link": "https://bitbucket.org/macagua",
-            "name": "My Bitbucket",
+            "name": "Mi Bitbucket",
         },
         {
             "icon": "fontawesome/brands/telegram",
-            "link": "https://t.me/leonardojcaballerog",
-            "name": "My Telegram",
+            "link": "https://t.me/macagua",
+            "name": "Mi Telegram",
         },
         # {
         #     "icon": "fontawesome/brands/whatsapp",
         #     "link": "https://wa.me/00504445556677?text=Hola%20Ing.%20Leonardo%20🙂,%20vi%20tu%20pagina%20web%20de%20aprender%20a%20programar%20Python%20y%20quisiera%20conocer%20mas%20de%20tus%20servicios%20de%20asesoría%20para%20programar%20en%20el%20lenguaje",
-        #     "name": "My WhatsApp",
+        #     "name": "Mi WhatsApp",
         # },
         {
             "icon": "material/rss-box",
-            "link": "https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/rss.xml",
+            "link": "https://entrenamiento-python-intermedio.readthedocs.io/es/latest/rss.xml",
             "name": "RSS Feed",
         },
     ],
@@ -329,6 +329,7 @@ html_css_files = [
     "stylesheets/virtual_business_card.css",
     "stylesheets/soporte_profesional.css",
     "stylesheets/sphinx_contributors.css",
+    "stylesheets/sphinx_tabs.css",
     "stylesheets/main/layout/_content.css",
     # "stylesheets/main/layout/_footer.css",
     # 'https://example.com/css/custom.css',
@@ -473,6 +474,8 @@ latex_show_urls = "footnote"
 latex_appendices = [
     "acerca_de",
     "esquema",
+    "lecturas",
+    "apendices/anexos",
     "copyright",
     "licencia",
 ]
@@ -595,6 +598,9 @@ todo_include_todos = True
 todo_emit_warnings = False
 
 # -- Options for sphinx-tabs extension -------------------------------
+
+# Disable original tabs.css so our override in _static/stylesheets/sphinx_tabs.css is sole source.
+sphinx_tabs_disable_css_loading = True
 
 # If needed, allow additional builders to be considered compatible.
 sphinx_tabs_valid_builders = ["linkcheck"]
