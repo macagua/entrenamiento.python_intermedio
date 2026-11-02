@@ -1,24 +1,37 @@
+*~
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+*.bnk
 
 # C extensions
 *.so
 
 # Distribution / packaging
 .Python
+.env
+.sass-cache
+env/
+bin/
 build/
+bnk/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
+include/
+info/
+local/
 lib/
 lib64/
 parts/
 sdist/
 var/
+venv/
+py3.*/
 wheels/
 share/python-wheels/
 *.egg-info/
@@ -35,6 +48,7 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+pip-selfcheck.json
 
 # Unit test / coverage reports
 htmlcov/
@@ -54,6 +68,14 @@ cover/
 # Translations
 *.mo
 *.pot
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
 
 # Django stuff:
 *.log
@@ -165,3 +187,10 @@ cython_debug/
 
 # Visual Studio Code
 *.code-workspace
+
+# Database
+*.pkl
+*.db
+*.sqlite3
+*.sqlite
+*.f*
