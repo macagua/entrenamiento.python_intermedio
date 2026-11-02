@@ -1,5 +1,3 @@
-.. -*- coding: utf-8 -*-
-
 .. acerca_copyright:
 
 =========
@@ -19,7 +17,7 @@ Autores
 
 Todas esta documentación es licencia por:
 
-* Copyright © 2022 - 2023 **Leonardo J. Caballero G.** Todos los derechos reservados.
+* Copyright © 2022 - 2026 **Leonardo J. Caballero G.** Todos los derechos reservados.
 
   * :email:`Leonardo J. Caballero G. <leonardocaballero@gmail.com>`
 

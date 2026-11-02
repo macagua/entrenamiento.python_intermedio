@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _lectura_extras_entrenamiento:
 
 Lecturas suplementarias del entrenamiento
@@ -39,7 +36,7 @@ Fast-track de Python
 
 - `Introducción a la programación con Python <https://www.mclibre.org/consultar/python/>`_.
 
-- `Python Tutorial <http://www.tutorialspoint.com/python/index.htm>`_.
+- `Python Tutorial <https://www.tutorialspoint.com/python/index.htm>`_.
 
 - `Wikipedia - Python <https://es.wikipedia.org/wiki/Python>`_.
 
@@ -211,7 +208,7 @@ json - Codificador y decodificador JSON
 
 - `json - JavaScript Object Notation <https://pymotw.com/3/json/index.html#module-json>`_.
 
-- `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/>`_.
+- `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/python/reading-and-writing-json-to-a-file-in-python/>`_.
 
 
 .. raw:: html

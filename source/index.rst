@@ -7,13 +7,21 @@
 Programación en Python 3 - Nivel intermedio
 ===========================================
 
-Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3`_ -
+Repositorio de manuales y recursos del entrenamiento **"Programación en** `Python 3.11`_ -
 **Nivel intermedio"**.
 
 
 .. note::
 
     Subir del nivel básico al nivel intermedio con explicaciones simples pero detalladas.
+
+
+.. warning::
+   Tenga en cuenta que este documento no está completo sin
+   la palabra hablada de un instructor a pesar de que tratamos
+   de incluir las partes más importantes de lo que enseñamos
+   en la narrativa no puede considerarse completa sin la
+   palabra hablada.
 
 
 **Tabla de contenidos**
@@ -33,14 +41,6 @@ Repositorio de manuales y recursos del entrenamiento **"Programación en** `Pyth
    leccion8/index
    leccion9/index
    leccion10/index
-
-
-.. warning::
-   Tenga en cuenta que este documento no está completo sin
-   la palabra hablada de un instructor a pesar de que tratamos
-   de incluir las partes más importantes de lo que enseñamos
-   en la narrativa no puede considerarse completa sin la
-   palabra hablada.
 
 
 Apéndices
@@ -64,4 +64,4 @@ Apéndices
 
    * :ref:`search`
 
-.. _`Python 3`: https://docs.python.org/es/3.11/
+.. _`Python 3.11`: https://docs.python.org/es/3.11/

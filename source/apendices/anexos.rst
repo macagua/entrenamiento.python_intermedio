@@ -1,6 +1,3 @@
-.. -*- coding: utf-8 -*-
-
-
 .. _anexos_entrenamiento:
 
 Anexos del entrenamiento
@@ -98,3 +95,9 @@ A continuación varios material multimedia anexos a las lecciones del entrenamie
     :align: center
 
     Vídeo `13.- Curso Python - For <https://www.youtube.com/watch?v=aqnjB3dydik>`_, cortesía de `CodigoFacilito.com`_.
+
+----
+
+
+.. raw:: html
+   :file: ../_templates/partials/soporte_profesional.html
