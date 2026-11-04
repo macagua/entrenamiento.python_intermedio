@@ -28,17 +28,17 @@ sphinx-quickstart docs
 
 ```python
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.intersphinx',
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.intersphinx",
 ]
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 
 autodoc_default_options = {
-    'members': True,
-    'show-inheritance': True,
+    "members": True,
+    "show-inheritance": True,
 }
 ```
 

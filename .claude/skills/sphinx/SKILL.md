@@ -139,75 +139,75 @@ touch docs/source/conf.py docs/source/index.rst
 # docs/source/conf.py
 
 # -- Project information -----------------------------------------------------
-project = 'MyProject'
-copyright = '2024-2026, Your Name'
-author = 'Your Name'
-release = '1.0.0'
-version = '1.0'
+project = "MyProject"
+copyright = "2024-2026, Your Name"
+author = "Your Name"
+release = "1.0.0"
+version = "1.0"
 
 # -- General configuration ---------------------------------------------------
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.githubpages',
-    'sphinx_rtd_theme',
-    'sphinx_copybutton',
-    'myst_parser',
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.todo",
+    "sphinx.ext.coverage",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.githubpages",
+    "sphinx_rtd_theme",
+    "sphinx_copybutton",
+    "myst_parser",
 ]
 
 # Source file suffixes
 source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'markdown',
+    ".rst": "restructuredtext",
+    ".md": "markdown",
 }
 
 # Master document
-master_doc = 'index'
+master_doc = "index"
 
 # Exclude patterns
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # Pygments style
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
 
 # -- Options for HTML output -------------------------------------------------
-html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
-html_logo = '_static/logo.png'
-html_favicon = '_static/favicon.ico'
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
+html_logo = "_static/logo.png"
+html_favicon = "_static/favicon.ico"
 
 html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': True,
-    'style_nav_header_background': '#2980B9',
+    "logo_only": False,
+    "display_version": True,
+    "prev_next_buttons_location": "bottom",
+    "style_external_links": True,
+    "style_nav_header_background": "#2980B9",
     # Toc options
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False,
+    "collapse_navigation": False,
+    "sticky_navigation": True,
+    "navigation_depth": 4,
+    "includehidden": True,
+    "titles_only": False,
 }
 
 # -- Options for autodoc -----------------------------------------------------
 autodoc_default_options = {
-    'members': True,
-    'member-order': 'bysource',
-    'special-members': '__init__',
-    'undoc-members': True,
-    'exclude-members': '__weakref__',
-    'show-inheritance': True,
+    "members": True,
+    "member-order": "bysource",
+    "special-members": "__init__",
+    "undoc-members": True,
+    "exclude-members": "__weakref__",
+    "show-inheritance": True,
 }
 
-autodoc_typehints = 'description'
-autodoc_typehints_description_target = 'documented'
-autodoc_class_signature = 'separated'
+autodoc_typehints = "description"
+autodoc_typehints_description_target = "documented"
+autodoc_class_signature = "separated"
 
 # -- Options for Napoleon (Google/NumPy docstrings) -------------------------
 napoleon_google_docstring = True
@@ -226,10 +226,10 @@ napoleon_attr_annotations = True
 
 # -- Options for intersphinx -------------------------------------------------
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
-    'numpy': ('https://numpy.org/doc/stable/', None),
-    'pandas': ('https://pandas.pydata.org/docs/', None),
-    'requests': ('https://requests.readthedocs.io/en/latest/', None),
+    "python": ("https://docs.python.org/3", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "pandas": ("https://pandas.pydata.org/docs/", None),
+    "requests": ("https://requests.readthedocs.io/en/latest/", None),
 }
 
 # -- Options for todo extension ----------------------------------------------
@@ -237,18 +237,17 @@ todo_include_todos = True
 
 # -- Options for LaTeX/PDF output --------------------------------------------
 latex_elements = {
-    'papersize': 'letterpaper',
-    'pointsize': '11pt',
-    'preamble': r'''
+    "papersize": "letterpaper",
+    "pointsize": "11pt",
+    "preamble": r"""
         \usepackage{charter}
         \usepackage[defaultsans]{lato}
         \usepackage{inconsolata}
-    ''',
+    """,
 }
 
 latex_documents = [
-    (master_doc, 'MyProject.tex', 'MyProject Documentation',
-     'Your Name', 'manual'),
+    (master_doc, "MyProject.tex", "MyProject Documentation", "Your Name", "manual"),
 ]
 
 # -- Options for EPUB output -------------------------------------------------
@@ -256,7 +255,7 @@ epub_title = project
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright
-epub_exclude_files = ['search.html']
+epub_exclude_files = ["search.html"]
 ```
 
 ### 3. Index and Table of Contents
@@ -352,9 +351,7 @@ class DataProcessor:
     """
 
     def __init__(
-        self,
-        config: Optional[Dict[str, Any]] = None,
-        verbose: bool = False
+        self, config: Optional[Dict[str, Any]] = None, verbose: bool = False
     ) -> None:
         """
         Initialize the DataProcessor.
@@ -379,12 +376,7 @@ class DataProcessor:
         self.verbose = verbose
         self._cache: Dict[str, Any] = {}
 
-    def load(
-        self,
-        path: Union[str, Path],
-        *,
-        validate: bool = True
-    ) -> 'DataProcessor':
+    def load(self, path: Union[str, Path], *, validate: bool = True) -> "DataProcessor":
         """
         Load data from a file.
 
@@ -420,10 +412,7 @@ class DataProcessor:
         # Implementation here
         return self
 
-    def process(
-        self,
-        operations: Optional[List[str]] = None
-    ) -> Dict[str, Any]:
+    def process(self, operations: Optional[List[str]] = None) -> Dict[str, Any]:
         """
         Process the loaded data with specified operations.
 
@@ -454,13 +443,9 @@ class DataProcessor:
             >>> print(result['stats'])
             {'rows_processed': 1000, 'time_ms': 42}
         """
-        return {'data': None, 'stats': {}, 'errors': []}
+        return {"data": None, "stats": {}, "errors": []}
 
-    def save(
-        self,
-        path: Union[str, Path],
-        format: str = 'csv'
-    ) -> None:
+    def save(self, path: Union[str, Path], format: str = "csv") -> None:
         """
         Save processed data to a file.
 
@@ -483,9 +468,7 @@ class DataProcessor:
 
 
 def calculate_metrics(
-    data: List[float],
-    *,
-    include_variance: bool = False
+    data: List[float], *, include_variance: bool = False
 ) -> Dict[str, float]:
     """
     Calculate statistical metrics for a list of values.
@@ -523,15 +506,15 @@ def calculate_metrics(
         raise ValueError("Data cannot be empty")
 
     result = {
-        'mean': sum(data) / len(data),
-        'median': sorted(data)[len(data) // 2],
-        'min': min(data),
-        'max': max(data),
+        "mean": sum(data) / len(data),
+        "median": sorted(data)[len(data) // 2],
+        "min": min(data),
+        "max": max(data),
     }
 
     if include_variance:
-        mean = result['mean']
-        result['variance'] = sum((x - mean) ** 2 for x in data) / len(data)
+        mean = result["mean"]
+        result["variance"] = sum((x - mean) ** 2 for x in data) / len(data)
 
     return result
 ```
@@ -592,23 +575,23 @@ rm -rf docs/build && sphinx-build -b html docs/source docs/build/html
 ```python
 # conf.py - Enable MyST
 extensions = [
-    'myst_parser',
+    "myst_parser",
 ]
 
 # MyST configuration
 myst_enable_extensions = [
-    'amsmath',
-    'colon_fence',
-    'deflist',
-    'dollarmath',
-    'fieldlist',
-    'html_admonition',
-    'html_image',
-    'replacements',
-    'smartquotes',
-    'strikethrough',
-    'substitution',
-    'tasklist',
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
 ]
 
 myst_heading_anchors = 3
@@ -692,12 +675,12 @@ Term 2
 ```python
 # conf.py
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
-    'numpy': ('https://numpy.org/doc/stable/', None),
-    'pandas': ('https://pandas.pydata.org/docs/', None),
-    'scipy': ('https://docs.scipy.org/doc/scipy/', None),
-    'matplotlib': ('https://matplotlib.org/stable/', None),
-    'sklearn': ('https://scikit-learn.org/stable/', None),
+    "python": ("https://docs.python.org/3", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "pandas": ("https://pandas.pydata.org/docs/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
+    "matplotlib": ("https://matplotlib.org/stable/", None),
+    "sklearn": ("https://scikit-learn.org/stable/", None),
 }
 
 # Timeout for fetching inventory files
@@ -750,13 +733,13 @@ sphinx-build -b coverage docs/source docs/build/coverage
 
 ```python
 # conf.py - PDF customization
-latex_engine = 'xelatex'
+latex_engine = "xelatex"
 
 latex_elements = {
-    'papersize': 'a4paper',
-    'pointsize': '11pt',
-    'figure_align': 'htbp',
-    'preamble': r'''
+    "papersize": "a4paper",
+    "pointsize": "11pt",
+    "figure_align": "htbp",
+    "preamble": r"""
         \usepackage{charter}
         \usepackage[defaultsans]{lato}
         \usepackage{inconsolata}
@@ -770,8 +753,8 @@ latex_elements = {
         % Code block styling
         \usepackage{fancyvrb}
         \fvset{fontsize=\small}
-    ''',
-    'maketitle': r'''
+    """,
+    "maketitle": r"""
         \begin{titlepage}
             \centering
             \vspace*{2cm}
@@ -783,15 +766,21 @@ latex_elements = {
             \vfill
             {\large \today\par}
         \end{titlepage}
-    ''',
+    """,
 }
 
 latex_documents = [
-    (master_doc, 'myproject.tex', 'MyProject Documentation',
-     'Your Name', 'manual', True),
+    (
+        master_doc,
+        "myproject.tex",
+        "MyProject Documentation",
+        "Your Name",
+        "manual",
+        True,
+    ),
 ]
 
-latex_show_urls = 'footnote'
+latex_show_urls = "footnote"
 latex_show_pagerefs = True
 ```
 
@@ -863,13 +852,13 @@ class VersionAddedDirective(Directive):
 
     def run(self):
         version = self.arguments[0]
-        content = '\n'.join(self.content)
+        content = "\n".join(self.content)
 
         para = nodes.paragraph()
-        para += nodes.strong(text=f'New in version {version}: ')
+        para += nodes.strong(text=f"New in version {version}: ")
         para += nodes.Text(content)
 
-        container = nodes.container(classes=['versionadded'])
+        container = nodes.container(classes=["versionadded"])
         container += para
 
         return [container]
@@ -894,25 +883,25 @@ class APIEndpointDirective(Directive):
     optional_arguments = 0
     has_content = True
     option_spec = {
-        'deprecated': lambda x: x,
+        "deprecated": lambda x: x,
     }
 
     def run(self):
         method_path = self.arguments[0]
-        parts = method_path.split(' ', 1)
-        method = parts[0] if len(parts) > 0 else 'GET'
-        path = parts[1] if len(parts) > 1 else '/'
+        parts = method_path.split(" ", 1)
+        method = parts[0] if len(parts) > 0 else "GET"
+        path = parts[1] if len(parts) > 1 else "/"
 
         # Create container
-        container = nodes.container(classes=['api-endpoint'])
+        container = nodes.container(classes=["api-endpoint"])
 
         # Add method badge
-        method_node = nodes.literal(text=method, classes=[f'method-{method.lower()}'])
-        path_node = nodes.literal(text=path, classes=['endpoint-path'])
+        method_node = nodes.literal(text=method, classes=[f"method-{method.lower()}"])
+        path_node = nodes.literal(text=path, classes=["endpoint-path"])
 
         header = nodes.paragraph()
         header += method_node
-        header += nodes.Text(' ')
+        header += nodes.Text(" ")
         header += path_node
         container += header
 
@@ -926,13 +915,13 @@ class APIEndpointDirective(Directive):
 
 
 def setup(app: Sphinx):
-    app.add_directive('versionadded', VersionAddedDirective)
-    app.add_directive('api-endpoint', APIEndpointDirective)
+    app.add_directive("versionadded", VersionAddedDirective)
+    app.add_directive("api-endpoint", APIEndpointDirective)
 
     return {
-        'version': '1.0.0',
-        'parallel_read_safe': True,
-        'parallel_write_safe': True,
+        "version": "1.0.0",
+        "parallel_read_safe": True,
+        "parallel_write_safe": True,
     }
 ```
 
@@ -941,11 +930,11 @@ def setup(app: Sphinx):
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent / '_extensions'))
+sys.path.insert(0, str(Path(__file__).parent / "_extensions"))
 
 extensions = [
     # ... other extensions
-    'custom_directive',
+    "custom_directive",
 ]
 ```
 
@@ -1026,24 +1015,24 @@ jobs:
 ```python
 # conf.py - Using sphinx-autoapi (alternative to autodoc)
 extensions = [
-    'autoapi.extension',
+    "autoapi.extension",
 ]
 
 # AutoAPI configuration
-autoapi_type = 'python'
-autoapi_dirs = ['../../src/mypackage']
-autoapi_template_dir = '_templates/autoapi'
+autoapi_type = "python"
+autoapi_dirs = ["../../src/mypackage"]
+autoapi_template_dir = "_templates/autoapi"
 autoapi_options = [
-    'members',
-    'undoc-members',
-    'show-inheritance',
-    'show-module-summary',
-    'special-members',
-    'imported-members',
+    "members",
+    "undoc-members",
+    "show-inheritance",
+    "show-module-summary",
+    "special-members",
+    "imported-members",
 ]
-autoapi_python_class_content = 'both'
-autoapi_member_order = 'groupwise'
-autoapi_root = 'api'
+autoapi_python_class_content = "both"
+autoapi_member_order = "groupwise"
+autoapi_root = "api"
 autoapi_keep_files = True
 autoapi_add_toctree_entry = True
 
@@ -1258,7 +1247,7 @@ API Changes
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parents[2] / 'src'))
+sys.path.insert(0, str(Path(__file__).parents[2] / "src"))
 ```
 
 #### Intersphinx Inventory Not Loading
@@ -1266,7 +1255,7 @@ sys.path.insert(0, str(Path(__file__).parents[2] / 'src'))
 ```python
 # conf.py - Use local inventory file
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', 'python-objects.inv'),
+    "python": ("https://docs.python.org/3", "python-objects.inv"),
 }
 
 # Download inventory manually
