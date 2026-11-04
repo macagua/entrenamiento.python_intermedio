@@ -1,4 +1,4 @@
-.. _python_leccion2:
+.. _python_fun_avanzadas:
 
 Uso avanzado de funciones
 =========================
@@ -37,7 +37,7 @@ Funciones anónimas
 
 Una función anónima, como su nombre indica es una función sin nombre. Es decir, es
 posible ejecutar una función sin referenciar un nombre, en Python puede ejecutar
-una función sin definirla con ``def``.
+una función sin definirla con :ref:`def <python_sent_def>`.
 
 De hecho son similares pero con una diferencia fundamental, **el contenido de una
 función anónima debe ser una única expresión en lugar de un bloque de acciones**.
@@ -50,7 +50,7 @@ Más allá del sentido de función que usted tiene hasta el momento, con su nomb
 sus acciones internas, una función en su sentido más trivial significa realizar algo
 sobre algo. Por tanto se podría decir que, mientras las funciones anónimas
 ``lambda`` sirven para realizar funciones simples, las funciones definidas con
-``def`` sirven para manejar tareas más extensas.
+:ref:`def <python_sent_def>` sirven para manejar tareas más extensas.
 
 
 .. _python_expresion_lambda:
@@ -187,9 +187,6 @@ sumar dos :ref:`números <python_int>`:
 
     Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion2>`
     del entrenamiento para ampliar su conocimiento en esta temática.
-
-
-----
 
 
 .. raw:: html

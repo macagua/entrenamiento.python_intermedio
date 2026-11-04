@@ -1,4 +1,4 @@
-""" Ejemplo de uso de bucle 'for' con sentencia 'else' """
+"""Ejemplo de uso de bucle 'for' con sentencia 'else'"""
 
 print("\nBucle 'for' con sentencia 'else'")
 print("================================\n")

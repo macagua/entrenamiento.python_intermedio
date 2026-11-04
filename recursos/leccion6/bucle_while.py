@@ -1,4 +1,4 @@
-""" Ejemplo de uso de Bucle 'while' con sentencia 'else' """
+"""Ejemplo de uso de Bucle 'while' con sentencia 'else'"""
 
 print("\nBucle 'while' con sentencia 'else'")
 print("==================================\n")

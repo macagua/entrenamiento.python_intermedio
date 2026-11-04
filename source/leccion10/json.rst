@@ -165,9 +165,6 @@ Así de esta forma puede leer y escribir registros en un archivo JSON usando el 
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 

@@ -1,4 +1,4 @@
-.. _python_leccion3:
+.. _python_iter:
 
 Iteradores
 ==========
@@ -9,7 +9,7 @@ reemplazar varios de los enfoques propios con una característica estándar, nor
 deriva en hacer las cosas más legibles además de más interoperable.
 
   *Guido van Rossum* --- `Añadiendo tipado estático opcional a Python`
-  (`Adding Optional Static Typing to Python <https://www.artima.com/weblogs/viewpost.jsp?thread=86641>`_).
+  (`PEP 484 – Type Hints <https://peps.python.org/pep-0484/>`_).
 
 Un iterador es un objeto adherido al `iterator protocol`_, básicamente esto significa
 que tiene una función :ref:`next() <python_fun_next>`, es decir, cuando se le llama,
@@ -354,7 +354,7 @@ tipo :ref:`diccionario <python_dict>`, por defecto muestra la clave de la secuen
 
 .. code-block:: pycon
 
-    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.11, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone)
     >>> paquete
     <dict_keyiterator object at 0x7f792c68ff40>
@@ -383,14 +383,14 @@ método integrado :ref:`values() <python_dict_mtd_values>`:
 
 .. code-block:: pycon
 
-    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.11, zope=5.2, plone=6.0)
     >>> version = iter(versiones_plone.values())
     >>> version
     <dict_valueiterator object at 0x7f792c59ee50>
     >>> print(next(version))
     5.2
     >>> print(next(version))
-    3.7
+    3.11
     >>> print(next(version))
     6.0
     >>> print(next(version))
@@ -412,12 +412,12 @@ método integrado :ref:`items() <python_dict_mtd_items>`:
 
 .. code-block:: pycon
 
-    >>> versiones_plone = dict(python=3.7, zope=5.2, plone=6.0)
+    >>> versiones_plone = dict(python=3.11, zope=5.2, plone=6.0)
     >>> paquete = iter(versiones_plone.items())
     >>> paquete
     <dict_itemiterator object at 0x7f792c59ee50>
     >>> print(next(paquete))
-    ('python', 3.7)
+    ('python', 3.11)
     >>> print(next(paquete))
     ('zope', 5.2)
     >>> print(next(paquete))
@@ -439,17 +439,10 @@ método integrado :ref:`items() <python_dict_mtd_items>`:
     del entrenamiento para ampliar su conocimiento en esta temática.
 
 
-----
-
-.. seealso::
-
-    Consulte la sección de :ref:`lecturas suplementarias <lectura_extras_leccion3>`
-    del entrenamiento para ampliar su conocimiento en esta temática.
-
 .. raw:: html
    :file: ../_templates/partials/soporte_profesional.html
 
 ..
   .. disqus::
 
-.. _`iterator protocol`: https://docs.python.org/es/3.7/library/stdtypes.html#iterator-types
+.. _`iterator protocol`: https://docs.python.org/es/3.11/library/stdtypes.html#iterator-types

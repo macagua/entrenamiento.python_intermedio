@@ -1,7 +1,7 @@
 """
-    Un conjunto, es una colección no ordenada y sin elementos repetidos.
-    Los usos básicos de éstos incluyen verificación de pertenencia y
-    eliminación de entradas duplicadas.
+Un conjunto, es una colección no ordenada y sin elementos repetidos.
+Los usos básicos de éstos incluyen verificación de pertenencia y
+eliminación de entradas duplicadas.
 """
 
 # crea un conjunto sin valores repetidos y lo asigna la variable
