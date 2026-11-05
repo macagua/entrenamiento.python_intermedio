@@ -125,3 +125,7 @@ como ``urllib`` y ``json`` para obtener recursos de Internet y procesarlos.
 
 **Práctica:** Ejemplo de uso del módulos de la librería estándar explorando el resultado
 en un módulo personalizado Python en el sistema de archivos.
+
+
+.. raw:: html
+   :file: _templates/partials/soporte_profesional.html
