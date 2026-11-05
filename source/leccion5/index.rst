@@ -1,18 +1,34 @@
-.. _python_leccion5:
+.. _python_fun_anonimas:
 
-Funciones Lambda
-================
+Funciones anónimas
+==================
 
-Las **funciones lambda** (también llamadas funciones anónimas) en Python son
-funciones pequeñas que se definen sin un nombre utilizando la palabra clave
-:ref:`lambda`. A diferencia de las funciones tradicionales definidas con
-:ref:`def <python_sent_def>`, las lambda están limitadas a **una sola expresión** y devuelven
-el resultado de esa expresión automáticamente.
+Una función anónima, como su nombre indica es una función sin nombre. Es decir, es
+posible ejecutar una función sin referenciar un nombre, en Python puede ejecutar
+una función sin definirla con :ref:`def <python_sent_def>`.
 
-----
+De hecho son similares pero con una diferencia fundamental, **el contenido de una
+función anónima debe ser una única expresión en lugar de un bloque de acciones**.
 
-Sintaxis Básica
----------------
+Las funciones anónimas se implementan en Python con las funciones o expresiones
+:ref:`lambda <python_expresion_lambda>`, esta es unas de las funcionalidades más
+potentes de Python, pero a la vez es la más confusas para los principiantes.
+
+Más allá del sentido de función que usted tiene hasta el momento, con su nombre y
+sus acciones internas, una función en su sentido más trivial significa realizar algo
+sobre algo. Por tanto se podría decir que, mientras las funciones anónimas
+``lambda`` sirven para realizar funciones simples, las funciones definidas con
+:ref:`def <python_sent_def>` sirven para manejar tareas más extensas.
+
+A diferencia de las funciones tradicionales definidas con :ref:`def <python_sent_def>`,
+las lambda están limitadas a **una sola expresión** y devuelven el resultado de esa
+expresión automáticamente.
+
+
+.. _python_expresion_lambda:
+
+Expresión lambda
+----------------
 
 La estructura de una función lambda es la siguiente:
 
@@ -28,57 +44,152 @@ La estructura de una función lambda es la siguiente:
 - ``expresion``: La operación que se realiza y cuyo resultado se devuelve automáticamente
   (no se usa la palabra :ref:`return`).
 
+Si deconstruye una función sencilla, puede llegar a una función ``lambda``. Por ejemplo
+la siguiente función es para doblar un valor de un número:
+
+.. code-block:: pycon
+
+    >>> def doblar(numero):
+    ...     resultado = numero * 2
+    ...     return resultado
+    ...
+
+    >>> doblar(2)
+    4
+    >>> type(doblar)
+    <type 'function'>
+
+
+Si el código fuente anterior se simplifica se verá, de la siguiente forma:
+
+.. code-block:: pycon
+
+    >>> def doblar(numero):
+    ...     return numero * 2
+    ...
+
+    >>> doblar(2)
+    4
+    >>> type(doblar)
+    <type 'function'>
+
+
+Usted puede todavía simplificar más, escribirlo todo en una sola línea, de la
+siguiente forma:
+
+.. code-block:: pycon
+
+    >>> def doblar(numero):
+    ...     return numero * 2
+    ...
+
+    >>> doblar(2)
+    4
+    >>> type(doblar)
+    <type 'function'>
+    >>> lambda numero: numero * 2
+    <function <lambda> at 0x7f1023944e60>
+
+
+Esta notación simple es la que una función ``lambda`` intenta replicar, observe,
+a continuación se va a convertir la función en una función anónima:
+
+.. code-block:: pycon
+
+    >>> lambda numero: numero * 2
+    <function <lambda> at 0x7f1023944e60>
+
+En este ejemplo tiene una función anónima con una entrada que recibe ``numero``,
+y una salida que devuelve ``numero * 2``.
+
+Lo único que necesita hacer para utilizarla es guardarla en una variable y utilizarla
+tal como haría con una función normal:
+
+.. code-block:: pycon
+
+    >>> doblar = lambda numero: numero * 2
+    >>> doblar(2)
+    4
+    >>> type(doblar)
+    <type 'function'>
+
+
+Con la flexibilidad de Python usted puede implementar infinitas funciones simples.
+Usted puede encontrar más ejemplos de funciones anónimas usando ``lambda`` en la
+sección :ref:`ejemplos de funciones avanzadas <python_fun_avanzadas_ejs>`.
+
+Usted puede explotar al máximo la función lambda utilizándola en conjunto con otras
+funciones como :ref:`filter() <python_fun_filter>` y :ref:`map() <python_fun_map>`.
+
+
+.. _python_fun_avanzadas_ejs:
+
+Ejemplos de funciones avanzadas
+-------------------------------
+
+A continuación, se presentan algunos ejemplos de su uso:
+
+
+**Función lambda - operaciones aritméticas**
+
+A continuación, se presenta un ejemplo para comprobar si un número es impar:
+
+.. code-block:: pycon
+
+    >>> impar = lambda numero: numero % 2 != 0
+    >>> impar(5)
+    True
+
+
+De esta manera, usted puede crear funciones anónimas para realizar operaciones
+aritméticas simples, como sumar, restar, multiplicar o dividir, sin necesidad
+de definir una función completa con :ref:`def <python_sent_def>`.
+
+
 ----
 
-Comparación: Función Normal vs. Función Lambda
-'''''''''''''''''''''''''''''''''''''''''''''''
 
-Para entenderlo mejor, veamos cómo haríamos una función simple que multiplica un número por 2 de ambas formas:
+**Función lambda - operaciones de cadena**
 
-Con :ref:`def <python_sent_def>` tradicional:
+A continuación, se presenta un ejemplo para darle la vuelta a una :ref:`cadena <python_str>` rebanándola
+en sentido inverso:
 
-.. code:: python
+.. code-block:: pycon
 
-    def duplicar(x):
-        return x * 2
+    >>> revertir = lambda cadena: cadena[::-1]
+    >>> revertir("Plone")
+    'enolP'
+    >>> revertir("enolP")
+    'Plone'
 
+De esta manera, usted puede crear funciones anónimas para realizar operaciones de cadena simples, como invertir,
+convertir a mayúsculas o minúsculas, sin necesidad de definir una función completa con :ref:`def <python_sent_def>`.
 
-    # Salida: 10
-    print(duplicar(5))
-
-Con :ref:`lambda`:
-
-.. code:: python
-
-    duplicar = lambda x: x * 2
-
-    # Salida: 10
-    print(duplicar(5))
-
-**Nota:** Aunque se puede asignar una lambda a una variable como en el ejemplo,
-       su verdadero poder se exprime cuando se usan de forma anónima (sin nombre)
-       dentro de otras funciones.
 
 ----
 
-Ejemplos Prácticos y Entendibles
---------------------------------
 
-1. Lambda con múltiples argumentos
-''''''''''''''''''''''''''''''''''
+**Función lambda - múltiples argumentos**
 
-Podemos recibir más de un parámetro separándolos por comas, igual que en una función normal.
+A continuación, se presenta un ejemplo para varios parámetros separándolos por comas, igual que en una
+función normal, por ejemplo para sumar dos :ref:`números <python_int>`:
 
-.. code:: python
+.. code-block:: pycon
 
-    # Función para sumar dos números
-    sumar = lambda a, b: a + b
+    >>> sumar = lambda x, y: x + y
+    >>> sumar(5, 2)
+    7
 
-    # Salida: 10
-    print(sumar(3, 7))
 
-1. Usando Lambda con `filter()`
-'''''''''''''''''''''''''''''''
+De esta manera, usted puede crear funciones anónimas para realizar operaciones simples con múltiples
+argumentos, sin necesidad de definir una función completa con :ref:`def <python_sent_def>`.
+
+
+----
+
+
+**Función lambda - función filter()**
+
 La función :ref:`filter() <python_fun_filter>` filtra los elementos de una lista basándose en una condición
 (si devuelve  :ref:`True <python_bool>` o  :ref:`False <python_bool>`). Es ideal
 combinarla con lambda para no crear funciones auxiliares largas.
@@ -93,8 +204,15 @@ combinarla con lambda para no crear funciones auxiliares largas.
     # Salida: [2, 4, 6, 8]
     print(pares)
 
-1. Usando Lambda con `map()`
-''''''''''''''''''''''''''''
+
+De esta manera, usted puede crear funciones anónimas para filtrar elementos de una lista basándose en una condición
+simple, sin necesidad de definir una función completa con :ref:`def <python_sent_def>`.
+
+
+----
+
+
+**Función lambda - función map()**
 
 La función :ref:`map() <python_fun_map>` aplica una operación a todos los elementos de una lista o iterable.
 
@@ -109,8 +227,14 @@ La función :ref:`map() <python_fun_map>` aplica una operación a todos los elem
     print(precios_con_descuento)
 
 
-1. Ordenar colecciones complejas con `sorted()`
-'''''''''''''''''''''''''''''''''''''''''''''''
+De esta manera, usted puede crear funciones anónimas para aplicar operaciones a todos los elementos de una lista
+o iterable, sin necesidad de definir una función completa con :ref:`def <python_sent_def>`.
+
+
+----
+
+
+**Función lambda - función sorted()**
 
 Si tienes una lista de diccionarios o tuplas y quieres ordenarla por un criterio específico,
 el parámetro ``key`` de :ref:`sorted() <python_fun_sorted>` acepta una función :ref:`lambda`.
@@ -129,12 +253,12 @@ el parámetro ``key`` de :ref:`sorted() <python_fun_sorted>` acepta una función
     print(estudiantes_ordenados)
     # Salida: [{'nombre': 'Carlos', 'edad': 19}, {'nombre': 'Ana', 'edad': 22}, {'nombre': 'Beatriz', 'edad': 25}]
 
+
 ----
+
 
 ¿Cuándo SÍ y cuándo NO usarlas?
 -------------------------------
-
-**NOTE:**
 
 - **Cuándo usarlas:** Para operaciones rápidas, sencillas y de un solo uso,
   especialmente como argumentos en funciones de orden superior
