@@ -42,7 +42,8 @@ Características principales
 2. **Pureza:** Idealmente, las funciones de predicado deben ser **funciones puras** (sin efectos secundarios),
    lo que significa que dado el mismo argumento, siempre devuelven el mismo resultado sin modificar estados externos.
 
-3. **Composición:** Son altamente reutilizables y se pueden combinar mediante operadores lógicos (:ref:`and <python_opers_logi_and>`, :ref:`or <python_opers_logi_or>`, :ref:`not <python_opers_logi_not>`).
+3. **Composición:** Son altamente reutilizables y se pueden combinar mediante operadores lógicos
+   (:ref:`and <python_opers_logi_and>`, :ref:`or <python_opers_logi_or>`, :ref:`not <python_opers_logi_not>`).
 
 ----
 

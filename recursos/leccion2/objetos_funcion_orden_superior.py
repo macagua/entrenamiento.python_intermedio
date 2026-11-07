@@ -15,7 +15,7 @@ def transformar_numeros(
 
     Returns:
         List[int]: Lista de números transformados.
-    """    
+    """
     return [funcion_regla(n) for n in numeros]
 
 
@@ -28,7 +28,7 @@ def al_cuadrado(x: int) -> int:
 
     Returns:
         int: Cuadrado del número.
-    """    
+    """
     return x**2
 
 

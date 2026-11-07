@@ -11,7 +11,7 @@ def crear_contador(inicio: int = 0) -> Callable[[], int]:
 
     Returns:
         Callable[[], int]: Una función que incrementa y devuelve el valor del contador.
-    """    
+    """
     # Variable en el ámbito envolvente (enclosing scope)
     contador = inicio
 

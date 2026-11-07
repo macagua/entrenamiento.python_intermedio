@@ -12,7 +12,7 @@ def potencia(base: int, exponente: int) -> int:
 
     Returns:
         int: Resultado de elevar la base al exponente.
-    """    
+    """
     return base**exponente
 
 
