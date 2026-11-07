@@ -159,10 +159,10 @@ para operaciones comunes, sin necesidad de definir funciones auxiliares largas.
 
 .. tip::
     Para ejecutar el código :file:`funciones_predicado.py`, :file:`funciones_predicado_filter.py`,
-     :file:`funciones_predicado_all_any.py`, :file:`funciones_predicado_closures.py`,
-     :file:`funciones_predicado_all_any_utility_functions.py`, y
-     :file:`funciones_predicado_closures.py`, abra una
-    consola de comando, acceda al directorio donde se encuentra los programas:
+    :file:`funciones_predicado_all_any.py`, :file:`funciones_predicado_closures.py`,
+    :file:`funciones_predicado_all_any_utility_functions.py`, y
+    :file:`funciones_predicado_closures.py`, abra una consola de comando, acceda al directorio
+    donde se encuentra los programas:
 
     ::
 
