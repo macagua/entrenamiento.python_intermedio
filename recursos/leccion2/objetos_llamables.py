@@ -1,5 +1,6 @@
 """Ejemplo de Objetos llamables"""
 
+
 class Multiplicador:
     """Clase Multiplicador"""
 
@@ -11,13 +12,13 @@ class Multiplicador:
         return numero * self.factor
 
 
-# Creamos una instancia configurada
+# Cree una instancia configurada
 duplicador = Multiplicador(2)
 triplicador = Multiplicador(3)
 
-# Invocamos la instancia directamente como si fuera una función
+# Invoca la instancia directamente como si fuera una función
 print(duplicador(10))  # Salida: 20
 print(triplicador(10))  # Salida: 30
 
-# Podemos verificar si es un objeto llamable
+# Puede verificar si es un objeto llamable
 print(callable(duplicador))  # Salida: True
