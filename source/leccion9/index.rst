@@ -66,12 +66,12 @@ sobre operandos numéricos.
 Esto significa que los objetos numéricos deben usarse junto con operadores como :ref:`+ <python_opers_arit_suma>`,
 :ref:`- <python_opers_arit_resta>`, :ref:`* <python_opers_arit_multi>`, :ref:`/ <python_opers_arit_div>`, etc.
 El :ref:`operador + <python_opers_arit_suma>` también está definido como un operador de concatenación en las clases
-:ref:`cadenas de caracteres <python_str>`, :ref:`listas <python_list>` y :ref:`tuplas <python_tuple>`. Podemos decir que
+:ref:`cadenas de caracteres <python_str>`, :ref:`listas <python_list>` y :ref:`tuplas <python_tuple>`. Puede decir que
 el :ref:`operador + <python_opers_arit_suma>` está sobrecargado.
 
 Para hacer que el comportamiento sobrecargado esté disponible en tu propia clase personalizada, el método mágico
 correspondiente debe ser redefinido. Por ejemplo, para usar el :ref:`operador + <python_opers_arit_suma>` con objetos de
-una clase definida por el usuario, debe incluir el método ``__add__()``. Veamos cómo implementar y usar algunos de
+una clase definida por el usuario, debe incluir el método ``__add__()``. Vea cómo implementar y usar algunos de
 los métodos mágicos más importantes.
 
 

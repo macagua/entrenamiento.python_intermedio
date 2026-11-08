@@ -30,11 +30,11 @@ quedando únicamente con los :ref:`números <python_int>` múltiples de 5, eso s
 
 .. code-block:: pycon
 
-    >>> # Primero declaramos una función condicional
+    >>> # Primero declara una función condicional
     >>> def multiple(numero):
-    ...     # Comprobamos si un numero es múltiple de cinco
+    ...     # Comprueba si un numero es múltiple de cinco
     ...     if numero % 5 == 0:
-    ...         # Sólo devolvemos True si lo es
+    ...         # Sólo devolve True si lo es
     ...         return True
     ...
 

@@ -16,7 +16,7 @@ def potencia(base: int, exponente: int) -> int:
     return base**exponente
 
 
-# Creamos una nueva función especializada donde el exponente ya está fijo en 2 (al cuadrado)
+# Cree una nueva función especializada donde el exponente ya está fijo en 2 (al cuadrado)
 cuadrado = partial(potencia, exponente=2)
 
 print(cuadrado(5))  # Salida: 25 (equivalente a potencia(5, 2))

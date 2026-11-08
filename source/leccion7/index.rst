@@ -76,8 +76,8 @@ Entonces el ejemplo anterior usando listas de comprensión, eso seria así:
 
 Como puede detallar en el ejemplo anterior, gracias a la listas de comprensión
 usted puede indicar directamente cada elemento que va a formar la :ref:`lista <python_list>`, en este
-caso cada letra, a la vez que definimos el :ref:`bucle for <python_bucle_for>`,
-entonces la :ref:`lista <python_list>` está formada por cada letra que recorremos en el bucle :ref:`for <python_bucle_for>`.
+caso cada letra, a la vez que define el :ref:`bucle for <python_bucle_for>`,
+entonces la :ref:`lista <python_list>` está formada por cada letra que recorre en el bucle :ref:`for <python_bucle_for>`.
 
 
 Ejemplo 3

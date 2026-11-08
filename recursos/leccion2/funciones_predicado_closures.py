@@ -11,7 +11,7 @@ def crear_validador_longitud(min_chars: int) -> Callable[[str], bool]:
 
     return validar
 
-# Creamos predicados específicos
+# Cree predicados específicos
 es_password_valido = crear_validador_longitud(8)
 es_username_valido = crear_validador_longitud(4)
 
