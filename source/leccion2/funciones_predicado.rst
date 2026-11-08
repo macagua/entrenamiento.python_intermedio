@@ -149,12 +149,19 @@ para operaciones comunes, sin necesidad de definir funciones auxiliares largas.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`funciones_predicado.py <../../recursos/leccion2/funciones_predicado.py>`,
-    :download:`funciones_predicado_filter.py <../../recursos/leccion2/funciones_predicado_filter.py>`,
-    :download:`funciones_predicado_all_any.py <../../recursos/leccion2/funciones_predicado_all_any.py>`,
-    :download:`funciones_predicado_closures.py <../../recursos/leccion2/funciones_predicado_closures.py>`,
-    :download:`funciones_predicado_all_any_utility_functions.py <../../recursos/leccion2/funciones_predicado_all_any_utility_functions.py>`, y
-    :download:`funciones_predicado_closures.py <../../recursos/leccion2/funciones_predicado_closures.py>`.
+    siguientes enlaces:
+
+    - :download:`funciones_predicado.py <../../recursos/leccion2/funciones_predicado.py>`.
+
+    - :download:`funciones_predicado_filter.py <../../recursos/leccion2/funciones_predicado_filter.py>`
+
+    - :download:`funciones_predicado_all_any.py <../../recursos/leccion2/funciones_predicado_all_any.py>`
+
+    - :download:`funciones_predicado_closures.py <../../recursos/leccion2/funciones_predicado_closures.py>`
+
+    - :download:`funciones_predicado_all_any_utility_functions.py <../../recursos/leccion2/funciones_predicado_all_any_utility_functions.py>`
+
+    - :download:`funciones_predicado_closures.py <../../recursos/leccion2/funciones_predicado_closures.py>`.
 
 
 .. tip::

@@ -250,12 +250,19 @@ o caché) de forma transparente.
 
 .. important::
     Usted puede descargar el código usado en esta sección haciendo clic en los
-    siguientes enlaces: :download:`objetos_funcion.py <../../recursos/leccion2/objetos_funcion.py>`,
-    :download:`diccionarios_despacho.py <../../recursos/leccion2/diccionarios_despacho.py>`,
-    :download:`objetos_funcion_orden_superior.py <../../recursos/leccion2/objetos_funcion_orden_superior.py>`,
-    :download:`objetos_llamables.py <../../recursos/leccion2/objetos_llamables.py>`,
-    :download:`funciones_closure_anonimas_partial.py <../../recursos/leccion2/funciones_closure_anonimas_partial.py>`, y
-    :download:`funciones_closure_function_factories.py <../../recursos/leccion2/funciones_closure_function_factories.py>`.
+    siguientes enlaces:
+
+    - :download:`objetos_funcion.py <../../recursos/leccion2/objetos_funcion.py>`.
+
+    - :download:`diccionarios_despacho.py <../../recursos/leccion2/diccionarios_despacho.py>`.
+
+    - :download:`objetos_funcion_orden_superior.py <../../recursos/leccion2/objetos_funcion_orden_superior.py>`.
+
+    - :download:`objetos_llamables.py <../../recursos/leccion2/objetos_llamables.py>`.
+
+    - :download:`funciones_closure_anonimas_partial.py <../../recursos/leccion2/funciones_closure_anonimas_partial.py>`.
+
+    - :download:`funciones_closure_function_factories.py <../../recursos/leccion2/funciones_closure_function_factories.py>`.
 
 
 .. tip::
