@@ -195,20 +195,16 @@ Lección 9 - Métodos mágicos
 
 .. _lectura_extras_leccion10:
 
-Lección 10 - Listas de comprensión y la librería estándar
----------------------------------------------------------
+Lección 10 - La librería estándar
+---------------------------------
 
+.. todo::
+   TODO Terminar de escribir esta sección.
 
-.. _lectura_extras_leccion10_json:
+..
+    .. _lectura_extras_leccion10_:
 
-json - Codificador y decodificador JSON
-.......................................
-
-- `json - Codificador y decodificador JSON <https://docs.python.org/es/3.11/library/json.html>`_.
-
-- `json - JavaScript Object Notation <https://pymotw.com/3/json/index.html#module-json>`_.
-
-- `Reading and Writing JSON to a File in Python <https://www.geeksforgeeks.org/python/reading-and-writing-json-to-a-file-in-python/>`_.
+    .......................................
 
 
 .. raw:: html
