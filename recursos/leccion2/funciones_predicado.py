@@ -21,13 +21,13 @@ def es_par(n: int) -> bool:
 # Define una lista de números
 numeros = [1, 2, 3, 4, 5, 6, 7, 8]
 
-# Invoca la función e imprimimos el resultado
+# Invoca la función e imprime el resultado
 resultado = filtrar_elementos(numeros, es_par)
 print(resultado)  # Salida esperada: [2, 4, 6, 8]
 
 # También funciona con otros tipos de datos (gracias al TypeVar T)
 palabras = ["gato", "elefante", "sol", "murciélago"]
-es_larga = lambda s: len(s) > 4
+es_larga = lambda s: len(s) > 4  # noqa: E731
 
 resultado_palabras = filtrar_elementos(palabras, es_larga)
 print(resultado_palabras)  # Salida esperada: ['elefante', 'murciélago']
