@@ -1,4 +1,4 @@
-.. _python_leccion7:
+.. _python_listas_comprension:
 
 Listas de comprensión
 =====================
