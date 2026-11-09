@@ -1,6 +1,6 @@
 """Generador de contadores independientes."""
 
-from typing import Callable
+from collections.abc import Callable
 
 
 def crear_contador(inicio: int = 0) -> Callable[[], int]:

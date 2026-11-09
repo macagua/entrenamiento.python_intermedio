@@ -1,12 +1,14 @@
 """Ejemplo de uso de funciones de predicado en Python."""
 
-from typing import Callable, TypeVar
+from typing import TypeVar
+from collections.abc import Callable
 
 # Define la variable de tipo genérico
 T = TypeVar("T")
 
 # Un predicado que recibe un valor de tipo T y devuelve un booleano
 PredicadoT = Callable[[T], bool]
+
 
 # Función que utiliza el predicado
 def filtrar_elementos(elementos: list[T], predicado: PredicadoT) -> list[T]:

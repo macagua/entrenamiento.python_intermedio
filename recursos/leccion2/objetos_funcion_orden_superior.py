@@ -1,12 +1,13 @@
 """Ejemplo de función de orden superior que transforma una lista de números
 utilizando una función de regla proporcionada."""
 
-from typing import Callable, List
+from typing import List
+from collections.abc import Callable
 
 
 def transformar_numeros(
-    numeros: List[int], funcion_regla: Callable[[int], int]
-) -> List[int]:
+    numeros: list[int], funcion_regla: Callable[[int], int]
+) -> list[int]:
     """Aplica una regla (función) a cada elemento de una lista.
 
     Args:

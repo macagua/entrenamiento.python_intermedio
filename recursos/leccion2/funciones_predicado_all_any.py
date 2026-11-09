@@ -6,12 +6,15 @@ usuarios = [
     {"nombre": "Irma", "activo": False, "edad": 56},
 ]
 
+
 # Predicado de validación individual
 def esta_activo(usuario: dict) -> bool:
     return usuario["activo"]
 
+
 def es_mayor_de_edad(usuario: dict) -> bool:
     return usuario["edad"] >= 18
+
 
 # all(): Comprueba si TODOS los elementos cumplen el predicado
 todos_activos = all(esta_activo(u) for u in usuarios)

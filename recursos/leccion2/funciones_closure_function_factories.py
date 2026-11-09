@@ -1,5 +1,6 @@
 """Fábrica de funciones para crear funciones multiplicadoras."""
 
+
 def creador_multiplicador(factor: int):
     """Crea una función que multiplica por un factor dado.
 

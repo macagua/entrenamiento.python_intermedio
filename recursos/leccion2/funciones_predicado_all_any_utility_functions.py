@@ -1,6 +1,7 @@
 """Ejemplo de combinación de predicados usando funciones de utilidad."""
 
-from typing import Callable, Any
+from typing import Any
+from collections.abc import Callable
 
 
 def combinar_y(*predicados: Callable[[Any], bool]) -> Callable[[Any], bool]:
